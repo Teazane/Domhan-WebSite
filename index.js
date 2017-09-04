@@ -5,7 +5,6 @@ const sqlDbFactory = require("knex");
 const _ = require("lodash");
 
 /* --------------------- Bases de données --------------------- */
-
 //Connexion à la BDD avec knex
 const sqlDb = sqlDbFactory({
   client: "sqlite3",
@@ -19,6 +18,7 @@ const sqlDb = sqlDbFactory({
 //Initialisation des DB
 function initDataBase() {
   //TODO : gérer les DB en vérifiant à chaque fois qu'elles existent
+  console.log(`Initialisation de la bdd`);
 }
 
 //TODO : Remplir les tables avec les données de fichiers JSON
@@ -35,7 +35,6 @@ app.use(bodyParser.urlencoded({ extended: true })); //Use qs library (true)
 
 app.get("/home", function(req, res) {
   //TODO
-  });
 });
 
 
