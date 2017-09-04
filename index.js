@@ -6,7 +6,7 @@ const _ = require("lodash");
 
 /* --------------------- Bases de données --------------------- */
 
-//Connection to the with knex
+//Connexion à la BDD avec knex
 const sqlDb = sqlDbFactory({
   client: "sqlite3",
   debug: false,
@@ -39,11 +39,9 @@ app.get("/home", function(req, res) {
 });
 
 
-
-
 initDataBase();
 
-/* --------------------- Start the server --------------------- */
+/* --------------------- Lance le serveur --------------------- */
 
 let serverPort = process.env.PORT || 5000; //Heroku PORT ou 5000
 
