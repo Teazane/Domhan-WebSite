@@ -46,5 +46,5 @@ let serverPort = process.env.PORT || 5000; //Heroku PORT ou 5000
 
 app.set("port", serverPort); //Mise en place du port d'écoute
 app.listen(serverPort, function() { //Lancement du serveur
-  console.log(`Votre app est opérationnelle au port ${serverPort}`);
+  console.log(`Votre appli' est opérationnelle au port ${serverPort}`);
 });
