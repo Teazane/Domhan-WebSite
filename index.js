@@ -15,13 +15,36 @@ const sqlDb = sqlDbFactory({
   useNullAsDefault: true
 });
 
-//Initialisation des DB
+//Fonctions d'initialisation des BDD
 function initDataBase() {
-  //TODO : gérer les DB en vérifiant à chaque fois qu'elles existent
-  console.log(`Initialisation de la bdd`);
+  //Gère les BDD en vérifiant à chaque fois qu'elles existent
+  console.log(`Initialisation de la BDD`);
+  sqlDb.schema.hasTable('characters').then(function(exists) {
+    if (!exists) {
+      initCharactersTable();
+    }
+  });
 }
 
-//TODO : Remplir les tables avec les données de fichiers JSON
+function initCharactersTable() {
+  return sqlDb.schema.createTable('characters', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('name');
+    t.string('status');
+    t.string('html_page');
+    t.text('rp_list');
+  }).then(() => {
+    return Promise.all(
+      _.map(characterslist, c => {
+        delete c.id;
+        return sqlDb("characters").insert(c);
+      })
+    );
+  });
+}
+
+//Remplit les tables avec les données de fichiers JSON
+let characterslist = require("./other/charactersdata.json");
 
 
 /* --------------------- Gestion des pages --------------------- */
@@ -37,8 +60,16 @@ app.get("/home", function(req, res) {
   //TODO
 });
 
-
+//Initialisation de la BDD
 initDataBase();
+
+//Gestion des requêtes
+app.get("/characters/index_characters", function(req, res) {
+  sqlDb("characters").orderBy("name", "asc")
+  .then(result => {
+    res.send(JSON.stringify(result));
+  });
+});
 
 /* --------------------- Lance le serveur --------------------- */
 

@@ -18,7 +18,11 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/social_network.html",
     })
     .when("/forum", {
-      templateUrl : "pages/forum.html", 
+      templateUrl : "pages/forum.html",
+    })
+    .when("/index_characters", {
+      templateUrl : "pages/encyclopedia/index_characters.html",
+      controller: "IndexCharactersController" //le controller ssocié à la page est chargé
     })
     .otherwise( {
       redirectTo: "/"
