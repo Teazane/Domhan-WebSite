@@ -15,7 +15,10 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/contact_us.html",
     })
     .when("/reseaux-sociaux", {
-      templateUrl : "pages/social_network.html", 
+      templateUrl : "pages/social_network.html",
+    })
+    .when("/forum", {
+      templateUrl : "pages/forum.html", 
     })
     .otherwise( {
       redirectTo: "/"
