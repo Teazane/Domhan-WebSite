@@ -8,9 +8,8 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/", { //Quand cette URL est appelée
       templateUrl : "pages/home.html", //La page correspondante est affichée
     })
-    .when("/truc_autre", {
-      templateUrl : "pages/truc_autre.html", //La page correspondante est affichée
-      controller: "TrucController" //Et le controlleur approprié est appelé
+    .when("/qui-sommes-nous", {
+      templateUrl : "pages/who_we_are.html", 
     })
     .otherwise( {
       redirectTo: "/"
