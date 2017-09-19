@@ -12,7 +12,10 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/who_we_are.html",
     })
     .when("/nous-contacter", {
-      templateUrl : "pages/contact_us.html", 
+      templateUrl : "pages/contact_us.html",
+    })
+    .when("/reseaux-sociaux", {
+      templateUrl : "pages/social_network.html", 
     })
     .otherwise( {
       redirectTo: "/"
