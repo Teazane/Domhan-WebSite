@@ -9,7 +9,10 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/home.html", //La page correspondante est affichée
     })
     .when("/qui-sommes-nous", {
-      templateUrl : "pages/who_we_are.html", 
+      templateUrl : "pages/who_we_are.html",
+    })
+    .when("/nous-contacter", {
+      templateUrl : "pages/contact_us.html", 
     })
     .otherwise( {
       redirectTo: "/"
