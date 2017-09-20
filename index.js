@@ -28,6 +28,7 @@ function initDataBase() {
 
 //Initialisation de la table des personnages + remplissage
 function initCharactersTable() {
+  console.log(`Initialisation de la table des personnages`);
   return sqlDb.schema.createTable('characters', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('name');
@@ -47,6 +48,7 @@ function initCharactersTable() {
 
 //Initialisation de la table de correspondance personnages/JdR
 function initCharactersRPTable() {
+  console.log(`Initialisation de la table de correspondance personnages/JdR`);
   return sqlDb.schema.createTable('characters_rp', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('id_character');
@@ -54,8 +56,9 @@ function initCharactersRPTable() {
   });
 }
 
-//Initialisation de la table de correspondance personnages/JdR
+//Initialisation de la table des JdR
 function initRPTable() {
+  console.log(`Initialisation de la table des JdR`);
   return sqlDb.schema.createTable('rp', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('title');
@@ -75,10 +78,6 @@ app.use(bodyParser.json());
 //The "extended" syntax allows for rich objects and arrays to be encoded into the URL-encoded format,
 //allowing for a JSON-like experience with URL-encoded.
 app.use(bodyParser.urlencoded({ extended: true })); //Use qs library (true)
-
-app.get("/home", function(req, res) {
-  //TODO
-});
 
 //Initialisation de la BDD
 initDataBase();
