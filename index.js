@@ -17,7 +17,7 @@ const sqlDb = sqlDbFactory({
 
 //Fonctions d'initialisation des BDD
 function initDataBase() {
-  //Gère les BDD en vérifiant à chaque fois qu'elles existent
+  //Gère la BDD en vérifiant à chaque fois que les tables existent
   console.log(`Initialisation de la BDD`);
   sqlDb.schema.hasTable('characters').then(function(exists) {
     if (!exists) {
@@ -26,20 +26,31 @@ function initDataBase() {
   });
 }
 
+//Initialisation de la table des personnages + remplissage
 function initCharactersTable() {
   return sqlDb.schema.createTable('characters', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('name');
     t.string('status');
     t.string('html_page');
-    t.text('rp_list');
   }).then(() => {
     return Promise.all(
       _.map(characterslist, c => {
-        delete c.id;
+        if (null != c.id){
+          delete c.id;
+        }
         return sqlDb("characters").insert(c);
       })
     );
+  });
+}
+
+//Initialisation de la table de correspondance personnages/JdR
+function initCharactersRPTable() {
+  return sqlDb.schema.createTable('characters', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('id_character');
+    t.string('id_RP');
   });
 }
 

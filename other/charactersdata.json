@@ -1,16 +1,12 @@
 [
   {
-    "id" : 1 ,
     "name" : "Ergaïl d'Orzaal" ,
     "status" : "Personnage joueur, non-jouable",
-    "html_page" : "ergail_dorzaal.html",
-    "rp_list" : "Origines, Emeris"
+    "html_page" : "ergail_dorzaal.html"
   },
   {
-    "id" : 2 ,
     "name" : "Lucyll Freespirit (ou d'Haoreo)" ,
     "status" : "Personnage joueur, non-jouable",
-    "html_page" : "lucyll_freespirit.html",
-    "rp_list" : "Origines, Vampyrs, Emeris"
+    "html_page" : "lucyll_freespirit.html"
   }
 ]
