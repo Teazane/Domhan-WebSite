@@ -47,10 +47,19 @@ function initCharactersTable() {
 
 //Initialisation de la table de correspondance personnages/JdR
 function initCharactersRPTable() {
-  return sqlDb.schema.createTable('characters', function(t) {
+  return sqlDb.schema.createTable('characters_rp', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('id_character');
-    t.string('id_RP');
+    t.string('id_rp');
+  });
+}
+
+//Initialisation de la table de correspondance personnages/JdR
+function initRPTable() {
+  return sqlDb.schema.createTable('rp', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('title');
+    t.string('date'); //TODO : réfléchir à un système de datation pour la frise
   });
 }
 
