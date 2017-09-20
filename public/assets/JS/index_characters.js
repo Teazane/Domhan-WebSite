@@ -25,7 +25,7 @@ app.controller("IndexCharactersController", function($scope, $routeParams) {
     fillIndexCharactersPage(); //remplit la liste des personnages
   }
 
-  // "#!/index_characters"
+  // "#!/encyclopedie/personnages"
   startup();
 
 });

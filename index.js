@@ -66,6 +66,38 @@ function initRPTable() {
   });
 }
 
+//Initialisation de la table des dieux
+function initGodsTable() {
+  console.log(`Initialisation de la table des dieux`);
+  return sqlDb.schema.createTable('gods', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('name');
+    t.string('attribution');
+    t.string('html_page');
+  });
+}
+
+//Initialisation de la table des races et peuples
+function initPeopleTable() {
+  console.log(`Initialisation de la table des races et peuples`);
+  return sqlDb.schema.createTable('people', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('name');
+    t.string('status');
+    t.string('html_page');
+  });
+}
+
+//Initialisation de la table du bestiaire
+function initBestiaryTable() {
+  console.log(`Initialisation de la table du bestiaire`);
+  return sqlDb.schema.createTable('bestiary', function(t) {
+    t.increments('id').primary(); //auto-incrementation pour id
+    t.string('name');
+    t.string('html_page');
+  });
+}
+
 //Remplit les tables avec les données de fichiers JSON
 let characterslist = require("./other/charactersdata.json");
 
@@ -83,8 +115,34 @@ app.use(bodyParser.urlencoded({ extended: true })); //Use qs library (true)
 initDataBase();
 
 //Gestion des requêtes
+
+//Récupération index des personnages
 app.get("/characters/index_characters", function(req, res) {
   sqlDb("characters").orderBy("name", "asc")
+  .then(result => {
+    res.send(JSON.stringify(result));
+  });
+});
+
+//Récupération index du panthéon
+app.get("/gods/index_gods", function(req, res) {
+  sqlDb("gods").orderBy("name", "asc")
+  .then(result => {
+    res.send(JSON.stringify(result));
+  });
+});
+
+//Récupération index des races et peuples
+app.get("/people/index_people", function(req, res) {
+  sqlDb("people").orderBy("name", "asc")
+  .then(result => {
+    res.send(JSON.stringify(result));
+  });
+});
+
+//Récupération index du bestiaire
+app.get("/bestiary/index_bestiary", function(req, res) {
+  sqlDb("bestiary").orderBy("name", "asc")
   .then(result => {
     res.send(JSON.stringify(result));
   });
