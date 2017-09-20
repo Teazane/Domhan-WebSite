@@ -18,10 +18,41 @@ const sqlDb = sqlDbFactory({
 //Fonctions d'initialisation des BDD
 function initDataBase() {
   //Gère la BDD en vérifiant à chaque fois que les tables existent
-  console.log(`Initialisation de la BDD`);
+  console.log(`Initialisation de la BDD \n`);
+
+  //Supprimer les anciennes tables (si elles existaient)
+  sqlDb.schema.dropTableIfExists('characters')
+  .then(function() {
+    console.log(`Suppression de l'ancienne table characters`)});
+  sqlDb.schema.dropTableIfExists('gods')
+  .then(function() {
+    console.log(`Suppression de l'ancienne table gods`)});
+  sqlDb.schema.dropTableIfExists('people')
+  .then(function() {
+    console.log(`Suppression de l'ancienne table people`)});
+  sqlDb.schema.dropTableIfExists('bestiary')
+  .then(function() {
+    console.log(`Suppression de l'ancienne table bestiary`)});
+
+  //Initialise les tables
   sqlDb.schema.hasTable('characters').then(function(exists) {
     if (!exists) {
       initCharactersTable();
+    }
+  });
+  sqlDb.schema.hasTable('gods').then(function(exists) {
+    if (!exists) {
+      initGodsTable();
+    }
+  });
+  sqlDb.schema.hasTable('people').then(function(exists) {
+    if (!exists) {
+      initPeopleTable();
+    }
+  });
+  sqlDb.schema.hasTable('bestiary').then(function(exists) {
+    if (!exists) {
+      initBestiaryTable();
     }
   });
 }
@@ -154,5 +185,5 @@ let serverPort = process.env.PORT || 5000; //Heroku PORT ou 5000
 
 app.set("port", serverPort); //Mise en place du port d'écoute
 app.listen(serverPort, function() { //Lancement du serveur
-  console.log(`Votre appli' est opérationnelle au port ${serverPort}`);
+  console.log(`Votre appli' est opérationnelle au port ${serverPort} \n`);
 });
