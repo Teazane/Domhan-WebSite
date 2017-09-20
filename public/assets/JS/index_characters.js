@@ -12,7 +12,7 @@ app.controller("IndexCharactersController", function($scope, $routeParams) {
           for (i=0; i<data.length; i++) {
             var list_element = document.createElement('li');
             var link_char = document.createElement('a');
-            link_char.setAttribute('href', `#!/character/${data[i].html_page}`);
+            link_char.setAttribute('href', `#!/encyclopedie/personnages/${data[i].html_page}`);
             link_char.innerHTML = `${data[i].name}`;
             list_element.appendChild(link_char);
             document.getElementById("characters_list").append(list_element);
