@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* - Pour police Font en ligne (google Font) : font-family: 'Kreon', serif;
+   - Font intégré au dossier "font", effectuer :
+
+@Fontface {
+  font-family:'Kreon';
+  src:'font/Kreon.ttf'
+}
+*/
+
+/* couleurs série :
+noir : 130F0A
+crème : C2A490
+marron clair : A6763D
+orange/doré : E19C34
+beige clair : D7C3A2
+*/
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Kreon', serif;
+  color: #131313; /*Couleur du texte*/
+  background-color: #ffffff; /*Couleur du fond de page*/
+}
+
+/*----------Barre de navigation----------*/
+
+.container-fluid{
+  padding: 0; /*Détermine les bords de tous les composant de l'image*/
+}
