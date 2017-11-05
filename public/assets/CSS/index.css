@@ -11,11 +11,11 @@
 
 /* couleurs série :
 noir : 130F0A
-crème foncée : AF8E6F
-marron : 60484E
-bleu galet : 48505F
-vert pastel : A1DCA7
-vert clair : D0F4C7
+rouge vif : D32430
+gris/vert pastel : BBBCAC
+blanc crème : FFEFF4
+pêche clair : F8D5B5
+marron bordeau : 582D30
 */
 
 body, html {
@@ -25,14 +25,11 @@ body, html {
 body {
   font-family: 'Kreon', serif;
   color: #131313; /*Couleur du texte*/
-  background-color: #ffffff; /*Couleur du fond de page*/
-}
-
-.container-fluid{
-  padding: 0; /*Détermine les bords de tous les composant de l'image*/
+  background-color: #BBBCAC; /*Couleur du fond de page*/
 }
 
 /*----------Barre de navigation----------*/
+
 .navbar {
   margin-bottom: 0;
   border-radius: 0;

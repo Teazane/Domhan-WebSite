@@ -5,7 +5,7 @@
 .banner {
   width: 100%;
   max-width: 100%;
-  padding: none;
+  padding: 0;
 }
 .ban {
  width: 100%;
@@ -28,10 +28,11 @@
   color: #ffffff;
   text-shadow: 1px 1px 20px #000000;
 }
-.inner-banner .btn-custom {
-  background-color: #130F0A;
+
+/*-----------Footer/Bas de page--------------*/
+
+footer {
   color: #ffffff;
-}
-.inner-banner .btn-custom:hover {
-  background-color: #E19C34;
+  background-color: #582D30;
+  padding: 25px;
 }
