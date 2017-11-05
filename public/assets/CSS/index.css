@@ -11,10 +11,11 @@
 
 /* couleurs série :
 noir : 130F0A
-crème : C2A490
-marron clair : A6763D
-orange/doré : E19C34
-beige clair : D7C3A2
+crème foncée : AF8E6F
+marron : 60484E
+bleu galet : 48505F
+vert pastel : A1DCA7
+vert clair : D0F4C7
 */
 
 body, html {
@@ -27,8 +28,37 @@ body {
   background-color: #ffffff; /*Couleur du fond de page*/
 }
 
-/*----------Barre de navigation----------*/
-
 .container-fluid{
   padding: 0; /*Détermine les bords de tous les composant de l'image*/
 }
+
+/*----------Barre de navigation----------*/
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  /*background-color: #60484E;*/
+  border: none;
+}
+
+/*----------logo Domhan----------*/
+.navbar .container {
+  text-align: center;
+}
+.navbar-collapse .navbar-brand {
+  display: inline-block;
+  float: none;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+/*Bloc contenant l'image du logo*/
+.navbar-collapse .navbar-brand .white-circle {
+  display: block;
+  width: 200px;
+  height: 75px;
+}
+/*Taille de l'image à l'intérieur du bloc*/
+.navbar-collapse .navbar-brand .logo {
+  width: 150px;
+}
+/*---------End Logo Domhan---------*/
