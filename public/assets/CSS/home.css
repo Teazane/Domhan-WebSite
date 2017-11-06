@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*-----------Page général--------------*/
+
+h2,p {
+  text-align: center;
+}
+
 /*-----------bannière--------------*/
 /*général*/
 .banner {
@@ -28,6 +34,11 @@
   color: #ffffff;
   text-shadow: 1px 1px 20px #000000;
 }
+/*-----------Section Membres/Liste--------------*/
+
+
+
+
 
 /*-----------Footer/Bas de page--------------*/
 
