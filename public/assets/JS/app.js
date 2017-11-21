@@ -8,6 +8,9 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/", { //Quand cette URL est appelée
       templateUrl : "pages/home.html" //La page correspondante est affichée
     })
+    .when("/404_not_found", {
+        templateUrl : "pages/404_not_found.html"
+    })
     .when("/qui-sommes-nous", {
       templateUrl : "pages/who_we_are.html"
     })
@@ -57,6 +60,6 @@ app.config(function($routeProvider, $locationProvider) {
         }
     })
     .otherwise( {
-      redirectTo: "/"
+      redirectTo: "/404_not_found"
     });
 });
