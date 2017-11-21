@@ -41,25 +41,40 @@ app.config(function($routeProvider, $locationProvider) {
     })
     .when("/encyclopedie/personnages/:character_html", {
         templateUrl : function (url_attr) {
-          return "pages/encyclopedia/characters/"+url_attr.character_html;
-        } //Voir : https://stackoverflow.com/questions/13681116/angularjs-dynamic-routing
+          var page = "pages/encyclopedia/characters/"+url_attr.character_html;
+          if (UrlExists(page)) {return page;} //Voir : https://stackoverflow.com/questions/13681116/angularjs-dynamic-routing
+          else {return "pages/404_not_found.html";} //Si l'HTML n'existe pas, erreur 404
+        }
     })
     .when("/encyclopedie/pantheon/:god_html", {
         templateUrl : function (url_attr) {
-          return "pages/encyclopedia/gods/"+url_attr.god_html;
+          var page = "pages/encyclopedia/gods/"+url_attr.god_html;
+          if (UrlExists(page)) {return page;} //Voir : https://stackoverflow.com/questions/13681116/angularjs-dynamic-routing
+          else {return "pages/404_not_found.html";} //Si l'HTML n'existe pas, erreur 404
         }
     })
     .when("/encyclopedie/races_et_peuples/:people_html", {
         templateUrl : function (url_attr) {
-          return "pages/encyclopedia/people/"+url_attr.people_html;
+          var page = "pages/encyclopedia/people/"+url_attr.people_html;
+          if (UrlExists(page)) {return page;} //Voir : https://stackoverflow.com/questions/13681116/angularjs-dynamic-routing
+          else {return "pages/404_not_found.html";} //Si l'HTML n'existe pas, erreur 404
         }
     })
     .when("/encyclopedie/bestiaire/:beast_html", {
         templateUrl : function (url_attr) {
-          return "pages/encyclopedia/bestiary/"+url_attr.beast_html;
+          var page = "pages/encyclopedia/bestiary/"+url_attr.beast_html;
+          if (UrlExists(page)) {return page;} //Voir : https://stackoverflow.com/questions/13681116/angularjs-dynamic-routing
+          else {return "pages/404_not_found.html";} //Si l'HTML n'existe pas, erreur 404
         }
     })
     .otherwise( {
       redirectTo: "/404_not_found"
     });
 });
+
+function UrlExists(url) {
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
