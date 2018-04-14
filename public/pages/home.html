@@ -1,434 +1,275 @@
+<!-- Dans les class, la fonction "well" est là pour mettre en évidence les diéfférentes section en blanc, peut-être retiré-->
 
-
-<!--bannière-->
+<!--bannière défilante (?)-->
+<!-- section base -->
 <section class="container-fluid banner">
   <div class="ban">
-    <img src="assets/Pictures/ban.jpg" alt="bannière du site">
+    <img class="logo" src="assets/Pictures/ban.jpg" alt="bannière du site">
   </div>
   <div class="inner-banner">
-    <h1>Bienvenue dans l'univers de Domhan</h1>
+    <h1>Bienvenue sur le site officiel de Domhan!</h1>
+    <button class="btn btn-custom">Rejoignez-nous !</button>
   </div>
+<!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
+  <div class="section-up"></div>
+<!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
 </section>
-<!--end bannière-->
+<!-- section base //-->
+<!--end bannière défilante (?)-->
 
-<!--Section Trailer vidéo-->
-<section class="container-fluid trailer">
-  <h2>Trailer</h2>
-  <p>[Ici la vidéo du trailer]</p>
-</section>
-<!--End section Trailer vidéo-->
-
-<!--Section des news-->
+<!--Section News-->
 <section class="container-fluid news">
-  <h2>Nouveautés</h2>
-  <p>[Ici les news (défilant ?)]</p>
-</section>
-<!--End Section des news-->
-
-<!--Section Membre-->
-<section class="container-fluid members">
-  <h2>Liste des Membres</h2>
-
+  <div class="blog-section paddingTB60 ">
   <div class="container">
-    <div id="products" class="row list-group">
-      <!--Dimna-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarDimna.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Dimna D'Emeris</h4>
-                    <p class="group inner list-group-item-text">
-                        Princesse déchue du royaume d'Emeris, Dimna est une jeune femme pleine de ressources et
-                      d'énergie. Passionnée de mode, elle vit au village d'Orzaal en tant que réfugiée politique.</p> <!--167 caractères max-->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Fondatrice</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Lucyll-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/Avatarlucyll.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Lucyll Freespirit</h4>
-                    <p class="group inner list-group-item-text">
-                        Une blondinette magicienne redoutable qui n'a pas froid au yeux et qui vit au village d'Orzaal
-                         en tant que conseillère du Duc.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Administratrice</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Ergaïl-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarErg.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Ergaïl d'Orzaal</h4>
-                    <p class="group inner list-group-item-text">
-                        Duc reignant sur la contrée d'Orzaal, il accueille à bras ouverts les personnes dans
-                      dans le besoin. Il adore passer du temps dans le jardin de son manoir pour discuter avec ses plantes vertes</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Fondateur</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Thaddeus-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarThadd.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Thaddeus Dreadstone</h4>
-                    <p class="group inner list-group-item-text">
-                        Scientifique en avance sur son temps, ce gentlemen est un maitre de l'art de l'épée et des
-                        potions explosives. Il vit à Orzaal où il travaille dans le laboratoire du manoir.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Fondateur</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Amras-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarAmras.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Amras Sunil</h4>
-                    <p class="group inner list-group-item-text">
-                        Mage d'Orzaal, on le croise la plupart du temps dans les rayons sans fin de la bibliothèque.
-                        Il est toujours à la recherche de nouvelles découvertes.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Fondateur</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Kupo-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarKupo.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                      Ul alagaï oste kupo</h4>
-                    <p class="group inner list-group-item-text">
-                        Ancien chef barbare vivant dans les grandes plaines de l'Est, Kupo vit désormais à Orzaal
-                      où il adore provoquer ses compatriotes en duel de toute sorte...mais principalement en concours d'alcool.  </p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Novice Auteur</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Amy-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarAmy.jpg" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                      Amy Wicardomma</h4>
-                    <p class="group inner list-group-item-text">
-                        Assassin de l'ombre, elle et son comparse Eliott offrent leur services
-                        au plus offrant. Ils travaillent actuellement à Orzaal et s'occuppent de son réseau d'information.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Administratrice</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son Histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Nahïm-->
-        <div class="item  col-xs-4 col-lg-4">
-          <div class="thumbnail">
-              <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarNah.jpg" alt="" />
-              <div class="caption">
-                  <h4 class="group inner list-group-item-heading">
-                    Nahïm Khelt</h4>
-                  <p class="group inner list-group-item-text">
-                      Nouvelle arrivée à Orzaal, Nahïm a trouvé un travail au manoir en tant qu'assistante de
-                    la cuisinière en chef et régale tout le monde avec ses fabuleuses crêpes.</p>
-                  <div class="row">
-                      <div class="col-xs-12 col-md-6">
-                          <p class="lead">
-                              Administratrice</p>
-                      </div>
-                      <div class="col-xs-12 col-md-6">
-                          <a class="btn btn-success" href="#">Son Histoire</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      <!--Chloé-->
-        <div class="item  col-xs-4 col-lg-4">
-          <div class="thumbnail">
-            <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                  Chloé Tülbend</h4>
-                <p class="group inner list-group-item-text">
-                    Petite fée timide, son aile abimée ne lui permet pas de se déplacer aisément.
-                  Elle s'entend bien avec Dimna.</p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            Novice Auteure</p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="#">Son Histoire</a>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      <!--Glenderin-->
-        <div class="item  col-xs-4 col-lg-4">
-          <div class="thumbnail">
-            <img class="group list-group-image" src="assets/Pictures/Membreslist/AvatarGlend.jpg" alt="" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                  Glenderin</h4>
-                <p class="group inner list-group-item-text">
-                    Demi elfe, demi dryade, c'est un spécialiste de l'arbalète magique. Arbalète
-                    qu'il a fabriqué lui-même.</p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            Novice auteur</p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="#">Son Histoire</a>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      <!--Edryss d'Alcard-->
-        <div class="item  col-xs-4 col-lg-4">
-          <div class="thumbnail">
-            <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                  Edryss d'Alcard</h4>
-                <p class="group inner list-group-item-text">
-                    Jeune Vampyre renégate récemment transformée et ne pouvant pas se contrôler totalement</p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            Novice auteure</p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="#">Son Histoire</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      <!--Rhapsody-->
-        <div class="item  col-xs-4 col-lg-4">
-              <div class="thumbnail">
-                  <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                  <div class="caption">
-                      <h4 class="group inner list-group-item-heading">
-                          Rhapsody</h4>
-                      <p class="group inner list-group-item-text">
-                          Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                          sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                      <div class="row">
-                          <div class="col-xs-12 col-md-6">
-                              <p class="lead">
-                                  Auteur novice</p>
-                          </div>
-                          <div class="col-xs-12 col-md-6">
-                              <a class="btn btn-success" href="#">Son Histoire</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      <!--Asëa-->
-        <div class="item  col-xs-4 col-lg-4">
-              <div class="thumbnail">
-                  <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                  <div class="caption">
-                      <h4 class="group inner list-group-item-heading">
-                          Aseä la fée</h4>
-                      <p class="group inner list-group-item-text">
-                          Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                          sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                      <div class="row">
-                          <div class="col-xs-12 col-md-6">
-                              <p class="lead">
-                                  Auteur novice</p>
-                          </div>
-                          <div class="col-xs-12 col-md-6">
-                              <a class="btn btn-success" href="#">Son histoire</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      <!--Popino-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Popino le sylphe</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Auteur novice</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Eldwine Rayta-->
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Eldwine Rayta</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                Novice auteur</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="#">Son histoire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!--Haeresis-->
-        <div class="item  col-xs-4 col-lg-4">
-                  <div class="thumbnail">
-                      <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                      <div class="caption">
-                          <h4 class="group inner list-group-item-heading">
-                              Haeresis</h4>
-                          <p class="group inner list-group-item-text">
-                              Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                          <div class="row">
-                              <div class="col-xs-12 col-md-6">
-                                  <p class="lead">
-                                      $21.000</p>
-                              </div>
-                              <div class="col-xs-12 col-md-6">
-                                  <a class="btn btn-success" href="#">Add to cart</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      <!--Ades-->
-        <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
-                        <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
-                        <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                Ades Kran</h4>
-                            <p class="group inner list-group-item-text">
-                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <p class="lead">
-                                        000</p>
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="#">Son histoire</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-    </div>
+  	<div class="row">
+  		<div class="site-heading text-center">
+  						<h3>Section News</h3>
+  						<div class="border"></div>
+  					</div>
+  	</div>
+  	<div class="row text-center">
+  	       <div class="col-sm-6 col-md-4">
+  							<div class="blog-box">
+  								<div class="blog-box-image">
+  									<img src="assets/Pictures/imgnews1.jpg" class="img-responsive" alt="">
+  								</div>
+  								<div class="blog-box-content">
+  									<h4><a href="#">Nouveautés 1</a></h4>
+  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+  									<a href="" class="btn btn-default site-btn">Read More</a>
+  								</div>
+  							</div>
+  						</div> <!-- End Col -->
+  			<div class="col-sm-6 col-md-4">
+  							<div class="blog-box">
+  								<div class="blog-box-image">
+  									<img src="assets/Pictures/imgnews2.jpg" class="img-responsive" alt="">
+  								</div>
+  								<div class="blog-box-content">
+  									<h4><a href="#">Nouveauté 2</a></h4>
+  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+  									<a href="" class="btn btn-default site-btn">Read More</a>
+  								</div>
+  							</div>
+  						</div> <!-- End Col -->
+  			<div class="col-sm-6 col-md-4">
+  							<div class="blog-box">
+  								<div class="blog-box-image">
+  									<img src="assets/Pictures/imgnews3.jpg" class="img-responsive" alt="">
+  								</div>
+  								<div class="blog-box-content">
+  									<h4><a href="#">Nouveauté 3</a></h4>
+  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+  									<a href="" class="btn btn-default site-btn">Read More</a>
+  								</div>
+  							</div>
+  						</div> <!-- End Col -->
+      </div>
   </div>
-
-
+  </div>
 </section>
-<!--End Section Membres-->
+<!--END Section News-->
 
-<!--Section gallerie-->
-  <section class="container-fluid gallery">
-    <h2>Galerie</h2>
-  </section>
-<!--End Section gallerie-->
+<!--Section MEMBRES---->
+<section class="container-fluid membres">
+  <div class="container">
+      <div id="main_area">
+          <!-- Slider -->
+          <div class="row">
+              <div class="col-sm-6" id="slider-thumbs">
+                  <!-- Bottom switcher of slider -->
+                  <ul class="hide-bullets">
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/150x150&text=zero"></a>
+                      </li>
 
-<!--Section suggestion de lecture-->
-<section class="container-fluid suggestion">
-  <h2>Suggestion de lectures</h2>
-  <p>[Ici des pages au pif]</p>
-  </section>
-<!--End Section suggestion de lecture-->
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
+                      </li>
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
+                      </li>
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
+                      </li>
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
+                      </li>
+
+                      <li class="col-sm-3">
+                          <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-sm-6">
+                  <div class="col-xs-12" id="slider">
+                      <!-- Top part of the slider -->
+                      <div class="row">
+                          <div class="col-sm-12" id="carousel-bounding-box">
+                              <div class="carousel slide" id="myCarousel">
+                                  <!-- Carousel items -->
+                                  <div class="carousel-inner">
+                                      <div class="active item" data-slide-number="0">
+                                          <img src="http://placehold.it/470x480&text=zero"></div>
+
+                                      <div class="item" data-slide-number="1">
+                                          <img src="http://placehold.it/470x480&text=1"></div>
+
+                                      <div class="item" data-slide-number="2">
+                                          <img src="http://placehold.it/470x480&text=2"></div>
+
+                                      <div class="item" data-slide-number="3">
+                                          <img src="http://placehold.it/470x480&text=3"></div>
+
+                                      <div class="item" data-slide-number="4">
+                                          <img src="http://placehold.it/470x480&text=4"></div>
+
+                                      <div class="item" data-slide-number="5">
+                                          <img src="http://placehold.it/470x480&text=5"></div>
+
+                                      <div class="item" data-slide-number="6">
+                                          <img src="http://placehold.it/470x480&text=6"></div>
+
+                                      <div class="item" data-slide-number="7">
+                                          <img src="http://placehold.it/470x480&text=7"></div>
+
+                                      <div class="item" data-slide-number="8">
+                                          <img src="http://placehold.it/470x480&text=8"></div>
+
+                                      <div class="item" data-slide-number="9">
+                                          <img src="http://placehold.it/470x480&text=9"></div>
+
+                                      <div class="item" data-slide-number="10">
+                                          <img src="http://placehold.it/470x480&text=10"></div>
+
+                                      <div class="item" data-slide-number="11">
+                                          <img src="http://placehold.it/470x480&text=11"></div>
+
+                                      <div class="item" data-slide-number="12">
+                                          <img src="http://placehold.it/470x480&text=12"></div>
+
+                                      <div class="item" data-slide-number="13">
+                                          <img src="http://placehold.it/470x480&text=13"></div>
+
+                                      <div class="item" data-slide-number="14">
+                                          <img src="http://placehold.it/470x480&text=14"></div>
+
+                                      <div class="item" data-slide-number="15">
+                                          <img src="http://placehold.it/470x480&text=15"></div>
+                                  </div>
+                                  <!-- Carousel nav -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--/Slider-->
+          </div>
+</section>
+<!--END Section Membres-->
+
+
 
 <!--Footer/Bas de page-->
-<footer class="container-fluid text-center">
-<p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
+<footer class="container-fluid footer">
+  <div class="footerHeader" ></div>
+      <div class="container">
+  		<div class="col-md-4" >
+  		    <h3>A propos</h3>
+  		    <p>
+  		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  		    </p>
+  		</div>
+
+  		<div class="col-md-4">
+  		    <h3>Quelques liens utiles </h3>
+          <p>
+  		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  		    </p>
+  		</div>
+  		<div class="col-md-4" >
+  		    <h3>Suivre l'information Domhan</h3>
+  		    <p>
+  		        Sur les réseaux sociaux
+  		    </p>
+  		    <ul class="sm">
+  		        <li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
+  		        <li><a href="#" ><img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" class="img-responsive"></a></li>
+  		        <li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"></a></li>
+  		    </ul>
+  		</div>
+      </div>
+
 </footer>
 <!--End footer/bas de page-->
-
 <!--end Contenu-->
+
+<!--CODE JAVASCRIPT POUR SECTION MEMBRES-->
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+    /*  $('#myCarousel').carousel({
+              interval: 5000
+      });*/
+
+      //Handles the carousel thumbnails
+      $('[id^=carousel-selector-]').click(function () {
+      var id_selector = $(this).attr("id");
+      try {
+          var id = /-(\d+)$/.exec(id_selector)[1];
+          console.log(id_selector, id);
+          jQuery('#myCarousel').carousel(parseInt(id));
+      } catch (e) {
+          console.log('Regex failed!', e);
+      }
+  });
+      // When the carousel slides, auto update the text
+      $('#myCarousel').on('slid.bs.carousel', function (e) {
+               var id = $('.item.active').data('slide-number');
+              $('#carousel-text').html($('#slide-content-'+id).html());
+      });
+});
+</script>

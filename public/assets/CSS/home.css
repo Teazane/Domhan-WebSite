@@ -2,48 +2,73 @@
 
 /*-----------Page général--------------*/
 
-h2,p {
-  text-align: center;
-}
 
 /*-----------bannière--------------*/
 /*général*/
-.banner {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-.ban {
- width: 100%;
- max-width: 100%;
 
-}
-.ban img {
-  width: 100%;
-  max-width: 100%;
-}
 
 /* Interieur de la bannière : texte et possible bouton*/
-.inner-banner {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
+
+/*---------SECTION NEWS---------*/
+.site-heading h3{
+    font-size : 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.inner-banner h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px 20px #000000;
+/* Ligne entre le titre et les articles*/
+.border {
+    background: #cfb986;
+    height: 2px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
-/*-----------Section Membres/Liste--------------*/
+/* Blog-CSS */
+.blog-box {
+    padding: 0 0px;
+    transition: .5s;
+    /*border: 1px solid #e2e2e2;*/
+    margin-bottom: 30px;
+    background-color: #cfb986;
+}
+.blog-box-content h4 a {
+    font-size: 20px;
+    padding: 0px 0 0px;
+    text-transform: uppercase;
+    color:#2b2b2b;
+     text-decoration:none;
 
+}
+.blog-box-content h4:hover {
+    color:#000;
+     text-decoration:none;
+}
 
+.blog-box-content {
+padding: 0 20px 20px;
+}
+.blog-box-text h4 a {
+    color: #333;
+}
+/*---------END SECTION NEWS---------*/
 
+/*---------SECTION MEMBRES---------*/
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
 
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+/*---------END SECTION MEMBRES---------*/
 
 /*-----------Footer/Bas de page--------------*/
-
-footer {
-  color: #ffffff;
-  background-color: #582D30;
-  padding: 25px;
-}

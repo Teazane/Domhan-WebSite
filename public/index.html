@@ -6,11 +6,6 @@
 
     <title>Domhan - Le site web</title>
 
-    <!-- Angular JS (library) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
-
     <!-- Bootstrap (library) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -25,52 +20,70 @@
   <body ng-app="domhanWebSite">
 
 <!-- Barre de navigation commune à toutes les pages et se trouvant dans le haut de page/header -->
-<header class="container-fluid header">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-
 <!-- Bouton navigation pour format mobile et petit écran -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MenuBar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand visible-xs" href="#">Domhan</a>
+          <a class="navbar-brand visible-xs" href="index.php">Domhan</a>
         </div>
 <!-- End bouton navigation pour format mobile et petit écran -->
-
-<!-- Barre de navigation séparée en deux : Ency/Chrono/Carte à gauche du logo et Fofo/Systè/Contact à droite du logo-->
-        <div class="collapse navbar-collapse" id="MenuBar">
-
+<!-- Barre de navigation séparée en trois parties : Gauche/Logo/Droite-->
+        <div id="navbar" class="collapse navbar-collapse">
 <!-- Navigation droite-->
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown">Encyclopédie
-                <span class="caret"></span><!-- Petit triangle accompagnant le texte-->
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#!/encyclopedie/races_et_peuples">Races et peuples</a></li>
-                <li><a href="#!/encyclopedie/pantheon">Panthéon</a></li>
-                <li><a href="#!/encyclopedie/bestiaire">Bestiaire</a></li>
-                <li><a href="#">Histoire</a></li>
-                <li><a href="#">Géographie</a></li>
-                <li><a href="#">Cultures</a></li>
-                <li><a href="#!/encyclopedie/personnages">Personnages</a></li>
-                <li><a href="#">Calendrier</a></li>
-                <li><a href="#">Magie</a></li>
-                <li><a href="#">Astrologie</a></li>
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Règlement</a></li>
+                <li><a href="#">Guide du nouveau</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Crédits</a></li>
               </ul>
             </li>
-            <li><a href="#">Chronologie</a></li>
-            <li><a href="#">Carte du monde</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Encyclopédie<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Le vivant</li>
+                  <li><a href="#">Races et Peuples</a></li>
+                  <li><a href="#">Bestiaire</a></li>
+                  <li><a href="#">Personnages</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Esotérisme</li>
+                  <li><a href="#">Panthéon</a></li>
+                  <li><a href="#">Magie</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Autres</li>
+                  <li><a href="#">Système monétaire</a></li>
+                  <li><a href="#">Astrologie</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contexte<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Géopolitique</li>
+                    <li><a href="#">Carte du monde</a></li>
+                    <li><a href="#">Géographie</a></li>
+                    <li><a href="#">Cultures</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Historique</li>
+                    <li><a href="#">Frise chronologique</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">Calendrier</a></li>
+                  </ul>
+                </li>
           </ul>
 <!-- End Navigation droite-->
 
 <!-- Logo de Domhan et bouton d'accueil-->
 <div class="navbar-brand hidden-xs">  <!-- hidden-xs : disparait sur plus petit écran-->
-  <a class="white-circle" href="#">
-    <img class="logo" src="assets/Pictures/logo.png" alt="Logo Domhan">
+  <a href="#">
+    <img class="logo" src="assets/Pictures/logo.png" alt="Logo Domhan" title="Domhan">
   </a>
 </div>
 <!-- En logo de Domhan et bouton d'accueil-->
@@ -78,32 +91,33 @@
 <!-- Navigation gauche-->
           <ul class="nav navbar-nav navbar-right">
             <li class="disabled"><a href="#">Système</a></li>
-            <li><a href="#!/forum">Forum</a></li>
+            <li><a href="#">Forum</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown">Contact
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#!/nous-contacter">Prendre contact</a></li>
-                <li><a href="#!/qui-sommes-nous">Qui sommes-nous ?</a></li>
-                <li><a href="#!/reseaux-sociaux">Réseaux sociaux</a></li>
-                <li><a href="#">Crédits</a></li>
-                <li><a href="#">FaQ</a></li>
-              </ul>
-            </li>
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Qui sommes-nous?</a></li>
+                  <li><a href="#">Réseaux Sociaux</a></li>
+                  <li><a href="#">Nous contacter</a></li>
+                </ul>
+              </li>
           </ul>
 <!-- End Navigation gauche-->
         </div>
       </div>
     </nav>
-</header>
 <!-- End Barre de navigation commune à toutes les pages-->
 
     <!-- Affichage de la page en cours -->
     <div ng-view></div>
 
+    <!-- Angular JS (library) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+
     <!-- Angular JS - script nécessaires à la navigation -->
     <script type="text/javascript" src="./assets/JS/app.js"></script>
+    <script type="text/javascript" src="./assets/JS/home.js"></script>
     <script type="text/javascript" src="./assets/JS/index_characters.js"></script>
     <script type="text/javascript" src="./assets/JS/index_gods.js"></script>
     <script type="text/javascript" src="./assets/JS/index_people.js"></script>
