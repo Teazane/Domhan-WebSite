@@ -6,8 +6,54 @@
 /*-----------bannière--------------*/
 /*général*/
 
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ban {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.ban img {
+  width: 100%;
+  max-width: 100%;
+}
 
 /* Interieur de la bannière : texte et possible bouton*/
+
+.inner-banner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 48px;
+  text-shadow: 0 2px 4px rgba(0,0,0,.5);
+  color: #fff;
+  font-weight: 700;
+  font-family: serif;
+  margin: 0;
+}
+
+h2 {
+font-size: 16px;
+color: #fff;
+letter-spacing: 0;
+line-height: 24px;
+text-shadow: 0 2px 4px rgba(0,0,0,.5);
+margin-top: 15px;
+}
+
+/*-----------END bannière--------------*/
+
+/*-----------Section Up (intercale entre la ban et le reste)--------------*/
+/*-----------END Section up--------------*/
 
 /*---------SECTION NEWS---------*/
 .site-heading h3{
@@ -70,5 +116,64 @@ padding: 0 20px 20px;
 }
 
 /*---------END SECTION MEMBRES---------*/
-
 /*-----------Footer/Bas de page--------------*/
+
+
+.icon-ul {
+  list-style-type:none !important;
+  margin:0px;
+  padding:0px;
+}
+ .icon-ul li {
+   line-height:75px;
+   width:100%;
+   float:left;
+ }
+ .icon {
+   float:left;
+   margin-right:5px;
+ }
+ .copyright {
+   min-height:40px;
+   background-color:#000000;
+ }
+ .copyright p {
+   text-align:left;
+   color:#FFF;
+   padding:10px 0;
+   margin-bottom:0px;
+ }
+ .heading7 {
+   font-size:21px;
+   font-weight:700;
+   color:#d9d6d6;
+   margin-bottom:22px;
+ }
+ .post p {
+   font-size:12px;
+   color:#FFF;
+   line-height:20px;
+ }
+ .post p span {
+   display:block;
+   color:#8f8f8f;
+ }
+ .bottom_ul {
+   list-style-type:none;
+   float:right;
+   margin-bottom:0px;
+ }
+ .bottom_ul li {
+   float:left;
+   line-height:40px;
+ }
+ .bottom_ul li:after {
+   content:"/";
+   color:#FFF;
+   margin-right:8px;
+   margin-left:8px;
+ }
+ .bottom_ul li a {
+   color:#FFF;
+   font-size:12px;
+ }

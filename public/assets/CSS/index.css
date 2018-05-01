@@ -10,12 +10,11 @@
 */
 
 /* couleurs série :
-noir : 130F0A
-rouge vif : D32430
-gris/vert pastel : BBBCAC
-blanc crème : FFEFF4
-pêche clair : F8D5B5
-marron bordeau : 582D30
+noir : 131313
+beige clair : e7d4aa
+bleu marine : 2c3e50
+sable mouillé: cfb986
+bleu marine foncé: 1b2530
 */
 
 html {
@@ -24,11 +23,15 @@ html {
 }
 
 body {
-  padding-top: 70px; /*Permet au contenu de rester sous la barre de navigation. A ne pas changer !*/
+  padding-top: 55px; /*Permet au contenu de rester sous la barre de navigation. A ne pas changer !*/
   margin: 0;
   font-family: 'Kreon', serif;
   color: #131313; /*Couleur du texte*/
   background-color: #e7d4aa; /*Couleur du fond de page*/
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 /*----------Barre de navigation----------*/
@@ -36,6 +39,96 @@ body {
 .navbar .container {
   text-align: center;
 }
+.navbar-default {
+  background-color: #2c3e50;
+  border-color: #1b2530;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #e7d4aa;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e7d4aa;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #2c3e50;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #e7d4aa;
+  background-color: #1b2530;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #1b2530;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #e7d4aa;
+  background-color: #1b2530;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #e7d4aa;
+  background-color: #1b2530;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #e7d4aa;
+  background-color: #1b2530;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1b2530;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1b2530;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #e7d4aa;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e7d4aa;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e7d4aa;
+    background-color: #1b2530;
+  }
+}
+
 /*----------logo Domhan----------*/
 
 .navbar-collapse .navbar-brand {
