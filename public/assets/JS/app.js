@@ -11,14 +11,8 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/404_not_found", {
         templateUrl : "pages/404_not_found.html"
     })
-    .when("/qui-sommes-nous", {
+    .when("/qui_sommes_nous", {
       templateUrl : "pages/who_we_are.html"
-    })
-    .when("/nous-contacter", {
-      templateUrl : "pages/contact_us.html"
-    })
-    .when("/reseaux-sociaux", {
-      templateUrl : "pages/social_network.html"
     })
     .when("/forum", {
       templateUrl : "pages/forum.html"
@@ -78,3 +72,12 @@ function UrlExists(url) {
     http.send();
     return http.status!=404;
 }
+
+// Gestion des ancres lors d'un changement de page
+// https://stackoverflow.com/questions/14712223/how-to-handle-anchor-hash-linking-in-angularjs
+app.run(function($rootScope, $location, $anchorScroll) {
+  //when the route is changed scroll to the proper element.
+  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    if($location.hash()) $anchorScroll();
+  });
+});
