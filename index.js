@@ -103,8 +103,18 @@ function initGodsTable() {
   return sqlDb.schema.createTable('gods', function(t) {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('name');
+    t.string('status');
     t.string('attribution');
     t.string('html_page');
+  }).then(() => {
+    return Promise.all(
+      _.map(godslist, g => {
+        if (null != g.id){
+          delete g.id;
+        }
+        return sqlDb("gods").insert(g);
+      })
+    );
   });
 }
 
@@ -116,6 +126,15 @@ function initPeopleTable() {
     t.string('name');
     t.string('status');
     t.string('html_page');
+  }).then(() => {
+    return Promise.all(
+      _.map(peoplelist, p => {
+        if (null != p.id){
+          delete p.id;
+        }
+        return sqlDb("people").insert(p);
+      })
+    );
   });
 }
 
@@ -126,11 +145,23 @@ function initBestiaryTable() {
     t.increments('id').primary(); //auto-incrementation pour id
     t.string('name');
     t.string('html_page');
+  }).then(() => {
+    return Promise.all(
+      _.map(beastslist, b => {
+        if (null != b.id){
+          delete b.id;
+        }
+        return sqlDb("bestiary").insert(b);
+      })
+    );
   });
 }
 
 //Remplit les tables avec les données de fichiers JSON
 let characterslist = require("./other/charactersdata.json");
+let beastslist = require("./other/bestiarydata.json");
+let godslist = require("./other/godsdata.json");
+let peoplelist = require("./other/peopledata.json");
 
 
 /* --------------------- Gestion des pages --------------------- */

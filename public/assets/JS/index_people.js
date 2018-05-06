@@ -12,7 +12,7 @@ app.controller("IndexPeopleController", function($scope, $routeParams) {
           //TODO : mieux organiser selon race ou peuple ou les deux
           for (i=0; i<data.length; i++) {
             var list_element = document.createElement('li');
-            var link_char = document.createElement('a');
+            var link_r_p = document.createElement('a');
             link_r_p.setAttribute('href', `#!/encyclopedie/races_et_peuples/${data[i].html_page}`);
             link_r_p.innerHTML = `${data[i].name}`;
             list_element.appendChild(link_r_p);

@@ -13,7 +13,7 @@ app.controller("IndexGodsController", function($scope, $routeParams) {
             var list_element = document.createElement('li');
             var link_god = document.createElement('a');
             link_god.setAttribute('href', `#!/encyclopedie/dieux/${data[i].html_page}`);
-            link_god.innerHTML = `${data[i].name}`;
+            link_god.innerHTML = `(${data[i].status}) ${data[i].name} - ${data[i].attribution}`;
             list_element.appendChild(link_god);
             document.getElementById("gods_list").append(list_element);
           }

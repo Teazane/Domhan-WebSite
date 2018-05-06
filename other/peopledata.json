@@ -1,0 +1,112 @@
+[
+  {
+    "name" : "Graers",
+    "status" : "Race et peuple",
+    "html_page" : "graers.html"
+  },
+  {
+    "name" : "Elfes",
+    "status" : "Race et peuple",
+    "html_page" : "elfes.html"
+  },
+  {
+    "name" : "Ajannils (ou Ajanils)",
+    "status" : "Race",
+    "html_page" : "ajannils.html"
+  },
+  {
+    "name" : "Démons",
+    "status" : "Race et peuple",
+    "html_page" : "demons.html"
+  },
+  {
+    "name" : "Sirènes",
+    "status" : "Race et peuple",
+    "html_page" : "sirenes.html"
+  },
+  {
+    "name" : "Alariens",
+    "status" : "Peuple",
+    "html_page" : "alariens.html"
+  },
+  {
+    "name" : "Vampyrs",
+    "status" : "Race",
+    "html_page" : "vampyrs.html"
+  },
+  {
+    "name" : "Serchanes",
+    "status" : "Race",
+    "html_page" : "serchanes.html"
+  },
+  {
+    "name" : "Orzaaliens",
+    "status" : "Peuple",
+    "html_page" : "orzaaliens.html"
+  },
+  {
+    "name" : "Naïades",
+    "status" : "Race et peuple",
+    "html_page" : "naiades.html"
+  },
+  {
+    "name" : "Petit Peuple - Fées, Korrigans, Kobolds et Ardillas ",
+    "status" : "Races et peuple",
+    "html_page" : "petit_peuple.html"
+  },
+  {
+    "name" : "Corsaires (ou Merirosvos)",
+    "status" : "Peuple",
+    "html_page" : "corsaires.html"
+  },
+  {
+    "name" : "Valkyries",
+    "status" : "Peuple",
+    "html_page" : "valkyries.html"
+  },
+  {
+    "name" : "Sirsheps",
+    "status" : "Race et peuple",
+    "html_page" : "sirsheps.html"
+  },
+  {
+    "name" : "Loups-garou",
+    "status" : "Race",
+    "html_page" : "loups-garou.html"
+  },
+  {
+    "name" : "Barbares",
+    "status" : "Peuple",
+    "html_page" : "barbares.html"
+  },
+  {
+    "name" : "Dryades",
+    "status" : "Race et peuple",
+    "html_page" : "dryades.html"
+  },
+  {
+    "name" : "Kehmren",
+    "status" : "Peuple",
+    "html_page" : "kehmren.html"
+  },
+  {
+    "name" : "Tibériens",
+    "status" : "Peuple",
+    "html_page" : "tiberiens.html"
+  },
+  {
+    "name" : "Gobelins",
+    "status" : "Race et peuple primitif",
+    "html_page" : "gobelins.html"
+  },
+  {
+    "name" : "Iskhars",
+    "status" : "Race et peuple",
+    "html_page" : "iskhars.html"
+  },
+  {
+    "name" : "Sylphes",
+    "status" : "Race et peuple",
+    "html_page" : "sylphes.html"
+  }
+]
