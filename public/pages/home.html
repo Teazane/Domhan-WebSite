@@ -258,28 +258,29 @@
 <!--End footer/bas de page-->
 
 <!--CODE JAVASCRIPT POUR LE CAROUSEL DE LA SECTION MEMBRES-->
+<!-- TODO : trouver comment remettre ce morceau dans home.js -->
 <script type="text/javascript">
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function($) {
 
-      $('#myCarousel').carousel({
-              interval: 0
-      });
+        $('#myCarousel').carousel({
+                interval: 0
+        });
 
-      //Handles the carousel thumbnails
-      $('[id^=carousel-selector-]').click(function () {
-      var id_selector = $(this).attr("id");
-      try {
-          var id = /-(\d+)$/.exec(id_selector)[1];
-          console.log(id_selector, id);
-          jQuery('#myCarousel').carousel(parseInt(id));
-      } catch (e) {
-          console.log('Regex failed!', e);
-      }
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
   });
-      // When the carousel slides, auto update the text
-      $('#myCarousel').on('slid.bs.carousel', function (e) {
-               var id = $('.item.active').data('slide-number');
-              $('#carousel-text').html($('#slide-content-'+id).html());
-      });
-});
 </script>
