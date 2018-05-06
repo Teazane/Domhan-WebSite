@@ -14,7 +14,7 @@ app.controller("IndexPeopleController", function($scope, $routeParams) {
             var list_element = document.createElement('li');
             var link_r_p = document.createElement('a');
             link_r_p.setAttribute('href', `#!/encyclopedie/races_et_peuples/${data[i].html_page}`);
-            link_r_p.innerHTML = `${data[i].name}`;
+            link_r_p.innerHTML = `[${data[i].status}] ${data[i].name}`;
             list_element.appendChild(link_r_p);
             document.getElementById("people_list").append(list_element);
           }
