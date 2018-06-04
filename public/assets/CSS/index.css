@@ -179,12 +179,13 @@ footer {
     font-weight: lighter;
     color: white;
 }
-/*.footerHeader{
+
+.footerHeader{
+    background-image:url("/assets/Pictures/section_down.png");
     width:100%;
-    padding:1em;
-    background-color:rgba(52, 73, 94,1.0);
-    text-align:center;
-    color:white;*/
+    height: 15px;
+      background-size: auto 100%;
+
 }
 footer h3{
     font-weight:lighter;

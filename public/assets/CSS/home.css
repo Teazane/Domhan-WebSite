@@ -37,22 +37,29 @@
 /*-----------Section Up (intercale entre la ban et le reste)--------------*/
 
 .section-up {
-  height: 11px;
+  /*height: 11px;
   background: #5e452f;
   border-top: 3px #86684e solid;
   border-bottom: 3px #3c2618 solid;
-  box-shadow: 1px 1px 5px #555;
+  box-shadow: 1px 1px 5px #555;*/
+  background-image: url("/assets/Pictures/section_up.png");
+  height: 15px;
+  background-size: auto 100%;
+  width: 100%;
 }
 
 /*-----------END Section up--------------*/
 
 /*---------SECTION NEWS---------*/
-.site-heading h3{
-    font-size : 40px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
+
+.news {
+  background-image: url("/assets/Pictures/backg_section1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
+
 /* Ligne entre le titre et les articles*/
 .border {
     background: #cfb986;
@@ -62,6 +69,7 @@
     margin-right: auto;
     margin-bottom: 25px;
 }
+/* END Ligne entre le titre et les articles*/
 /* Blog-CSS */
 .blog-box {
     padding: 0 0px;
