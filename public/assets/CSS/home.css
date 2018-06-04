@@ -35,6 +35,15 @@
 /*-----------END bannière--------------*/
 
 /*-----------Section Up (intercale entre la ban et le reste)--------------*/
+
+.section-up {
+  height: 11px;
+  background: #5e452f;
+  border-top: 3px #86684e solid;
+  border-bottom: 3px #3c2618 solid;
+  box-shadow: 1px 1px 5px #555;
+}
+
 /*-----------END Section up--------------*/
 
 /*---------SECTION NEWS---------*/
