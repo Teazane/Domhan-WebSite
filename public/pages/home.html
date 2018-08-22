@@ -1,247 +1,291 @@
-<!-- Dans les class, la fonction "well" est là pour mettre en évidence les diéfférentes section en blanc, peut-être retiré-->
+<!-- section BANNIERE -->
+<section class="container-fluid banner"></section>
+<!-- section BANNIERE-->
 
-<!--bannière défilante (?)-->
-<!-- section base -->
-<section class="container-fluid banner">
-  <div class="ban">
-    <img class="logo" src="assets/Pictures/ban.jpg" alt="bannière du site">
-  </div>
 <!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
-  <div class="section-up"></div>
+<div class="section-up"></div>
 <!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
-</section>
-<!-- section base //-->
-<!--end bannière défilante (?)-->
 
-<!--Section News-->
-<section class="container-fluid news">
-  <div class="blog-section paddingTB60 ">
-  <div class="container">
-  	<div class="row">
-  		<div class="site-heading text-center">
-  						<h1>ACTUALITÉS</h1>
-  						<div class="border"></div>
-  					</div>
-  	</div>
-  	<div class="row text-center">
-  	       <div class="col-sm-6 col-md-4">
-  							<div class="blog-box">
-  								<div class="blog-box-image">
-  									<img src="assets/Pictures/imgnews1.jpg" class="img-responsive" alt="">
-  								</div>
-  								<div class="blog-box-content">
-  									<h2>NOUVEAUTÉ 1</h2>
-  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
-  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
-  									<a href="" class="btn btn-default site-btn">Read More</a>
-  								</div>
-  							</div>
-  						</div> <!-- End Col -->
-  			<div class="col-sm-6 col-md-4">
-  							<div class="blog-box">
-  								<div class="blog-box-image">
-  									<img src="assets/Pictures/imgnews2.jpg" class="img-responsive" alt="">
-  								</div>
-  								<div class="blog-box-content">
-  									<h2>NOUVEAUTÉ 2</h2>
-  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
-  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
-  									<a href="" class="btn btn-default site-btn">Read More</a>
-  								</div>
-  							</div>
-  						</div> <!-- End Col -->
-  			<div class="col-sm-6 col-md-4">
-  							<div class="blog-box">
-  								<div class="blog-box-image">
-  									<img src="assets/Pictures/imgnews3.jpg" class="img-responsive" alt="">
-  								</div>
-  								<div class="blog-box-content">
-  									<h2>NOUVEAUTÉ 3</h2>
-  									<p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
-  									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
-  									<a href="" class="btn btn-default site-btn">Read More</a>
-  								</div>
-  							</div>
-  						</div> <!-- End Col -->
+<!-- Section Presentation, avec texte et video trailer-->
+<section class="container-fluid presentation">
+  <div class="container present">
+    <div class="row">
+      <div class="col-md-6 left">
+        <h1 class="title1">Bienvenue à Domhan !</h1>
+        <p> Dans un univers féerique, des personnages aux destins héroïques naissent du bout d’une plume guidée par l’imagination.</p>
+        <p>Cherchant un moyen de réaliser leurs rêves les plus fous au gré d’aventures et de rencontres, magiciens, guerriers ou bandits partent pour un voyage qui changera leur destinée.</p>
+          <p>Ils devront faire preuve de force et de courage, d’ingéniosité et de talent pour trouver la porte qui les guidera jusqu'à l’objet de leur convoitise. Aux quatre coins d'un monde aussi magnifique, qu’hostile, rempli d’êtres et de créatures de légende, le combat ne fait que commencer… </p>
+        <p>Alors écris ta propre histoire, incarne ton héros et pars à l’aventure dans le passionnant univers magique de Domhan !</p>
+
+        <div class="button">
+          <a href="#" id="buttonfeuille"><img src="assets/Pictures/button.png" alt=""></a>
+        </div>
       </div>
-  </div>
+      <div class="col-md-6 right">
+        <div class="video-conteneur">
+          <iframe src="https://www.youtube.com/embed/_zskrY1mZX4?rel=0&amp;controls=0&amp;showinfo=0" max-width="640" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    </div>
+</section>
+<!-- END Section Presentation, avec texte et video trailer-->
+
+<!-- Barre latérale de séparation entre section membres et le contenu liens-->
+<div class="section_down"></div>
+<!--END Barre latérale de séparation entre section membres et le contenu liens-->
+
+<section class="container-fluid news">
+  <div class="container articles">
+    <div class="site-heading">
+      <h1>ACTUALITÉS</h1>
+      <div class="border"></div>
+    </div>
+  <div class="row">
+		<div class="col-lg-7 left">
+			<!-- artigo em destaque -->
+           <div class="blog-box">
+             <div class="blog-box-image">
+               <img src="assets/Pictures/imgnews1.jpg" class="img-responsive" alt="">
+             </div>
+             <div class="blog-box-content">
+               <h2>LA CLASSE !</h2>
+               <p>Non mais franchement...Est ce que cette section nouveauté ne pue pas un peu le style ? Non mais oh hein ? En plus on peut en mettre plus maintenant !</p>
+               <a href="" class="btn btn-default site-btn">Read More</a>
+               <time class="bloc-box-date datetime" id="First-bloc-box" datetime="2018-08-07">17 Août 2018</time>
+             </div>
+           </div>
+			<!-- /.featured-article -->
+		</div>
+		<div class="col-lg-5 right">
+			<ul class="media-list main-list">
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="assets/Pictures/imgnews1.jpg" alt="">
+			    </a>
+			    <div class="media-body">
+			      <h3 class="media-heading">Un nouveau design !</h3>
+			      <p class="by-author">Le petit forum est devenu grand et avec de toutes nouvelles archives à en faire baver Owlmhar !</p>
+            <time class="bloc-box-date datetime" datetime="2018-08-07">17 Août 2018</time>
+          </div>
+			  </li>
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="assets/Pictures/imgnews2.jpg" alt="">
+			    </a>
+			    <div class="media-body">
+			      <h3 class="media-heading">Le culte de Pinpoultus</h3>
+			      <p class="by-author">Mais quelle est donc cette nouvelle secte ? Toutes les explications dans votre section Encyclopédie.</p>
+            <time class="bloc-box-date datetime" datetime="2018-08-07">17 Août 2018</time>
+          </div>
+			  </li>
+        <li class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="assets/Pictures/imgnews3.jpg" alt="">
+          </a>
+          <div class="media-body">
+            <h3 class="media-heading">INVASION DE PINGOUINS</h3>
+            <p class="by-author">Ils sont là ! Ils arrivent, plus nombreux que jamais ! La conquête est en marche et rien ne pourra les arrêter !</p>
+            <time class="bloc-box-date datetime" datetime="2018-08-07">17 Août 2018</time>
+          </div>
+        </li>
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="assets/Pictures/imgnews3.jpg" alt="">
+			    </a>
+			    <div class="media-body">
+			      <h3 class="media-heading">MISSING : la disparition de l'inspiration</h3>
+			      <p class="by-author">C'est terrible ! L'inspiration a disparu et il est impossible de trouver un thème pour ce sujet!<p>
+            <time class="bloc-box-date datetime" datetime="2018-08-07">17 Août 2018</time>
+          </div>
+			  </li>
+			</ul>
+		</div>
+	</div>
   </div>
 </section>
-<!--END Section News-->
+
+<!-- Barre latérale de séparation entre section membres et le contenu liens-->
+<div class="section_down"></div>
+<!--END Barre latérale de séparation entre section membres et le contenu liens-->
 
 <!--Section MEMBRES---->
 <section class="container-fluid membres">
-  <div class="container">
-    <div class="row">
-      <div class="site-heading text-center">
-              <h1>NOS MEMBRES</h1>
-              <div class="border"></div>
+  <div class="container wrap">
+
+        <div class="site-heading">
+          <h1>NOS MEMBRES</h1>
+          <div class="border"></div>
+        </div>
+
+        <div class="lightbox-gallery">
+          <div class="tile">
+           <img src='assets/Pictures/Membreslist/AvatarAmras.jpg'/>
+            <div class="text">
+              <h2 class="animate-text">Amras Sunil</h2>
+              <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+              <p class="animate-text">Bacon ipsum dolor amet turducken, pancetta bresaola pork chicken meatloaf.Flank sirloin strip steak prosciutto kevin turducken. </p>
+              <div class="animate-button">
+                <a href="" class="btn btn-default site-btn">Read More</a>
+              </div>
             </div>
-    </div>
-      <div id="main_area">
-          <!-- Slider -->
-          <div class="row">
-              <div class="col-sm-6" id="slider-thumbs">
-                  <!-- Bottom switcher of slider -->
-                  <ul class="hide-bullets">
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-0"><img src="assets/Pictures/Membreslist/AvatarAmrasmini.jpg"></a>
-                      </li>
+           </div>
 
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-1"><img src="assets/Pictures/Membreslist/AvatarAmymini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-2"><img src="assets/Pictures/Membreslist/AvatarDimnamini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-3"><img src="assets/Pictures/Membreslist/AvatarErgmini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-4"><img src="assets/Pictures/Membreslist/AvatarGlendmini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-5"><img src="assets/Pictures/Membreslist/AvatarKupomini.jpg"></a>
-                      </li>
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-6"><img src="assets/Pictures/Membreslist/Avatarlucyllmini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-7"><img src="assets/Pictures/Membreslist/AvatarNahmini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-8"><img src="assets/Pictures/Membreslist/AvatarThaddmini.jpg"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
-                      </li>
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
-                      </li>
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
-                      </li>
-
-                      <li class="col-sm-3">
-                          <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-sm-6">
-                  <div class="col-xs-12" id="slider">
-                      <!-- Top part of the slider -->
-                      <div class="row">
-                          <div class="col-sm-12" id="carousel-bounding-box">
-                              <div class="carousel slide" id="myCarousel">
-                                  <!-- Carousel items -->
-                                  <div class="carousel-inner">
-                                      <div class="active item" data-slide-number="0">
-                                          <img src="assets/Pictures/Membreslist/AvatarAmras.jpg"></div>
-
-                                      <div class="item" data-slide-number="1">
-                                          <img src="assets/Pictures/Membreslist/AvatarAmy.jpg"></div>
-
-                                      <div class="item" data-slide-number="2">
-                                          <img src="assets/Pictures/Membreslist/AvatarDimna.jpg"></div>
-
-                                      <div class="item" data-slide-number="3">
-                                          <img src="assets/Pictures/Membreslist/AvatarErg.jpg"></div>
-
-                                      <div class="item" data-slide-number="4">
-                                          <img src="assets/Pictures/Membreslist/AvatarGlend.jpg"></div>
-
-                                      <div class="item" data-slide-number="5">
-                                          <img src="assets/Pictures/Membreslist/AvatarKupo.jpg"></div>
-
-                                      <div class="item" data-slide-number="6">
-                                          <img src="assets/Pictures/Membreslist/Avatarlucyll.jpg"></div>
-
-                                      <div class="item" data-slide-number="7">
-                                          <img src="assets/Pictures/Membreslist/AvatarNah.jpg"></div>
-
-                                      <div class="item" data-slide-number="8">
-                                          <img src="assets/Pictures/Membreslist/AvatarThadd.jpg"></div>
-
-                                      <div class="item" data-slide-number="9">
-                                          <img src="http://placehold.it/470x480&text=9"></div>
-
-                                      <div class="item" data-slide-number="10">
-                                          <img src="http://placehold.it/470x480&text=10"></div>
-
-                                      <div class="item" data-slide-number="11">
-                                          <img src="http://placehold.it/470x480&text=11"></div>
-
-                                      <div class="item" data-slide-number="12">
-                                          <img src="http://placehold.it/470x480&text=12"></div>
-
-                                      <div class="item" data-slide-number="13">
-                                          <img src="http://placehold.it/470x480&text=13"></div>
-
-                                      <div class="item" data-slide-number="14">
-                                          <img src="http://placehold.it/470x480&text=14"></div>
-
-                                      <div class="item" data-slide-number="15">
-                                          <img src="http://placehold.it/470x480&text=15"></div>
-                                  </div>
-                                  <!-- Carousel nav -->
-                              </div>
-                          </div>
-                      </div>
+           <div class="tile">
+              <img src='assets/Pictures/Membreslist/AvatarAmy.jpg'/>
+                <div class="text">
+                  <h2 class="animate-text">Amy Wicardomma</h2>
+                  <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                  <p class="animate-text">Bacon ipsum dolor amet, p ipsum dolor amet pork belly tri-tip turduckenancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                  <div class="animate-button">
+                    <a href="" class="btn btn-default site-btn">Read More</a>
                   </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <img src='assets/Pictures/Membreslist/AvatarDimna.jpg'/>
+                <div class="text">
+                  <h2 class="animate-text">Dimna d'Émeris</h2>
+                  <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                  <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                  <div class="animate-button">
+                    <a href="" class="btn btn-default site-btn">Read More</a>
+                  </div>
+                </div>
+            </div>
+
+             <div class="tile">
+               <img src='assets/Pictures/Membreslist/AvatarErg.jpg'/>
+               <div class="text">
+                 <h2 class="animate-text">Ergaïl d'Orzaal</h2>
+                 <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                 <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                 <div class="animate-button">
+                   <a href="" class="btn btn-default site-btn">Read More</a>
+                 </div>
+               </div>
+            </div>
+
+            <div class="tile">
+              <img src='assets/Pictures/Membreslist/AvatarGlend.jpg'/>
+              <div class="text">
+                <h2 class="animate-text">Glenderin</h2>
+                <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                <div class="animate-button">
+                  <a href="" class="btn btn-default site-btn">Read More</a>
+                </div>
               </div>
-              <!--/Slider-->
+           </div>
+
+           <div class="tile">
+             <img src='assets/Pictures/Membreslist/AvatarKupo.jpg'/>
+             <div class="text">
+               <h2 class="animate-text">Kupo</h2>
+               <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+               <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+               <div class="animate-button">
+                 <a href="" class="btn btn-default site-btn">Read More</a>
+               </div>
+             </div>
           </div>
+
+          <div class="tile">
+            <img src='assets/Pictures/Membreslist/Avatarlucyll.jpg'/>
+            <div class="text">
+              <h2 class="animate-text">Lucyll Freespirit</h2>
+              <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+              <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+              <div class="animate-button">
+                <a href="" class="btn btn-default site-btn">Read More</a>
+              </div>
+            </div>
+         </div>
+
+         <div class="tile">
+           <img src='assets/Pictures/Membreslist/AvatarNah.jpg'/>
+           <div class="text">
+             <h2 class="animate-text">Nahim Khelt</h2>
+             <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+             <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+             <div class="animate-button">
+               <a href="" class="btn btn-default site-btn">Read More</a>
+             </div>
+           </div>
+        </div>
+
+        <div class="tile">
+          <img src='assets/Pictures/Membreslist/AvatarPopinomini.jpg'/>
+          <div class="text">
+            <h2 class="animate-text">Popino Popillion</h2>
+            <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+            <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+            <div class="animate-button">
+              <a href="" class="btn btn-default site-btn">Read More</a>
+            </div>
+          </div>
+       </div>
+
+       <div class="tile">
+         <img src='assets/Pictures/Membreslist/AvatarThadd.jpg'/>
+         <div class="text">
+           <h2 class="animate-text">Thaddeus Dreadstone</h2>
+           <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+           <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+           <div class="animate-button">
+             <a href="" class="btn btn-default site-btn">Read More</a>
+           </div>
+         </div>
+      </div>
+
+      <div class="tile">
+        <img src='assets/Pictures/Membreslist/AvatarRhapsmini.jpg'/>
+        <div class="text">
+          <h2 class="animate-text">Rhapsody</h2>
+          <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+          <div class="animate-button">
+            <a href="" class="btn btn-default site-btn">Read More</a>
+          </div>
+        </div>
+     </div>
+
+    </div>
+  </div>
 </section>
-<!--END Section Membres-->
+<!--END Section MEMBRES-->
 
-<!--Section Galerie-->
+<!-- Barre latérale de séparation entre section membres et le contenu liens-->
+<div class="section_down"></div>
+<!--END Barre latérale de séparation entre section membres et le contenu liens-->
 
-
-<!--END Section Galerie-->
-
-<!--CODE JAVASCRIPT POUR LE CAROUSEL DE LA SECTION MEMBRES-->
-<!-- TODO : trouver comment remettre ce morceau dans home.js -->
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-
-        $('#myCarousel').carousel({
-                interval: 0
-        });
-
-        //Handles the carousel thumbnails
-        $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
-  });
-</script>
+<!--Section LIENS-->
+<section class="container-fluid liens">
+  <div class="container" id="backtablewood">
+    <div class="col-md-4">
+      <div class="site-heading">
+  						<h1>CARTE</h1>
+  						<div class="border"></div>
+  					</div>
+      <a href="#" id="map"><img src="assets/Pictures/maplien.png" alt=""></a>
+    </div>
+    <div class="col-md-4">
+      <div class="site-heading">
+  						<h1>GALERIE</h1>
+  						<div class="border"></div>
+  					</div>
+      <a href="#" id="galery"><img src="assets/Pictures/papers_beast.png" alt=""></a>
+    </div>
+    <div class="col-md-4">
+      <div class="site-heading">
+  						<h1>CHRONOLOGIE</h1>
+  						<div class="border"></div>
+  					</div>
+      <a href="#" id="chronologie"><img src="assets/Pictures/chrono_stone.png" alt=""></a>
+    </div>
+  </div>
+</section>
+<!--END Section LIENS-->

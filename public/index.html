@@ -12,106 +12,162 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Fiches CSS -->
+    <link rel="stylesheet" href="assets/CSS/who_we_are.css">
     <link rel="stylesheet" href="assets/CSS/home.css">
     <link rel="stylesheet" href="assets/CSS/index.css">
+    <!--Liens vers des icons supplémentaire, en plus de glyphicon Bootstrapp (permet entre autre, d'avoir les icons réseaux sociaux)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Police d'écriture -->
-        <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alice|Inknut+Antiqua:400,500" rel="stylesheet">
 
   </head>
 
   <body ng-app="domhanWebSite">
 
-<!-- Barre de navigation commune à toutes les pages et se trouvant dans le haut de page/header -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-<!-- Bouton navigation pour format mobile et petit écran -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand visible-xs" href="index.php">Domhan</a>
-        </div>
-<!-- End bouton navigation pour format mobile et petit écran -->
-<!-- Barre de navigation séparée en trois parties : Gauche/Logo/Droite-->
-        <div id="navbar" class="collapse navbar-collapse">
-<!-- Navigation droite-->
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Règlement</a></li>
-                <li><a href="#">Guide du nouveau</a></li>
-                <li><a href="#">F.A.Q.</a></li>
-                <li><a href="#">Crédits</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Encyclopédie<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">Le vivant</li>
-                  <li><a href="#!/encyclopedie/races_et_peuples">Races et Peuples</a></li>
-                  <li><a href="#!/encyclopedie/bestiaire">Bestiaire</a></li>
-                  <li><a href="#!/encyclopedie/personnages">Personnages</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Esotérisme</li>
-                  <li><a href="#!/encyclopedie/pantheon">Panthéon</a></li>
-                  <li><a href="#">Magie</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Autres</li>
-                  <li><a href="#">Système monétaire</a></li>
-                  <li><a href="#">Astronomie</a></li>
+    <header> <!--Le Header correspond au haut de page et son contenu-->
+      <!-- Barre de navigation commune à toutes les pages et se trouvant dans le haut de page/header -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <!-- Bouton navigation pour format mobile et petit écran -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="index.php">Domhan</a>
+              </div>
+              <!-- End bouton navigation pour format mobile et petit écran -->
+              <!-- Barre de navigation séparée en trois parties : Gauche/Logo/Droite-->
+              <div id="navbar" class="collapse navbar-collapse">
+                <!-- Navigation droite-->
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Code<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Règlement</a></li>
+                      <li><a href="#">Guide du nouveau</a></li>
+                      <li><a href="#">F.A.Q.</a></li>
+                      <li><a href="#">Crédits</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Encyclopédie<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-header">Le vivant</li>
+                        <li><a href="#!/encyclopedie/races_et_peuples">Races et Peuples</a></li>
+                        <li><a href="#!/encyclopedie/bestiaire">Bestiaire</a></li>
+                        <li><a href="#!/encyclopedie/personnages">Personnages</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Esotérisme</li>
+                        <li><a href="#!/encyclopedie/pantheon">Panthéon</a></li>
+                        <li><a href="#">Magie</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Autres</li>
+                        <li><a href="#">Système monétaire</a></li>
+                        <li><a href="#">Astronomie</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contexte<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-header">Géopolitique</li>
+                          <li><a href="#">Carte du monde</a></li>
+                          <li><a href="#">Géographie</a></li>
+                          <li><a href="#">Cultures</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li class="dropdown-header">Historique</li>
+                          <li><a href="#">Frise chronologique</a></li>
+                          <li><a href="#">Histoire</a></li>
+                          <li><a href="#">Calendrier</a></li>
+                        </ul>
+                      </li>
                 </ul>
-              </li>
-              <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contexte<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-header">Géopolitique</li>
-                    <li><a href="#">Carte du monde</a></li>
-                    <li><a href="#">Géographie</a></li>
-                    <li><a href="#">Cultures</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Historique</li>
-                    <li><a href="#">Frise chronologique</a></li>
-                    <li><a href="#">Histoire</a></li>
-                    <li><a href="#">Calendrier</a></li>
-                  </ul>
-                </li>
-          </ul>
-<!-- End Navigation droite-->
+                <!-- End Navigation droite-->
 
-<!-- Logo de Domhan et bouton d'accueil-->
-<div class="navbar-brand hidden-xs">  <!-- hidden-xs : disparait sur plus petit écran-->
-  <a href="#">
-    <img class="logo" src="assets/Pictures/logo.png" alt="Logo Domhan" title="Domhan">
-  </a>
-</div>
-<!-- En logo de Domhan et bouton d'accueil-->
+                <!-- Logo de Domhan et bouton d'accueil-->
+                <div class="navbar-brand hidden-xs">  <!-- hidden-xs : disparait sur plus petit écran-->
+                  <a href="#">
+                    <img class="logo" src="assets/Pictures/logo.png" alt="Logo Domhan" title="Domhan">
+                  </a>
+                </div>
+                <!-- En logo de Domhan et bouton d'accueil-->
 
-<!-- Navigation gauche-->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="disabled"><a href="#">Système</a></li>
-            <li><a href="#!/forum">Forum</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#!/qui_sommes_nous">Qui sommes-nous?</a></li>
-                  <li><a href="#!/qui_sommes_nous#social_network">Réseaux Sociaux</a></li>
-                  <li><a href="#!/qui_sommes_nous#contact_us">Nous contacter</a></li>
+                <!-- Navigation gauche-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="disabled"><a href="#">Système</a></li>
+                  <li><a href="#!/forum">Forum</a></li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#!/qui_sommes_nous">Qui sommes-nous?</a></li>
+                        <li><a href="#!/qui_sommes_nous#social_network">Réseaux Sociaux</a></li>
+                        <li><a href="#!/qui_sommes_nous#contact_us">Nous contacter</a></li>
+                      </ul>
+                    </li>
                 </ul>
-              </li>
-          </ul>
-<!-- End Navigation gauche-->
-        </div>
-      </div>
-    </nav>
-<!-- End Barre de navigation commune à toutes les pages-->
+                <!-- End Navigation gauche-->
+              </div>
+            </div>
+          </nav>
+          <!-- End Barre de navigation commune à toutes les pages-->
+    </header>
 
     <!-- Affichage de la page en cours -->
     <div ng-view></div>
+    <!-- END Affichage de la page en cours -->
+    <!--Footer/Bas de page-->
+    <footer class="container-fluid footer">
+      <div class="footerHeader"></div>
+          <div class="container">
+      		<div class="col-md-4" >
+      		    <h3>A propos</h3>
+      		    <p>
+      		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      		    </p>
+      		</div>
+
+      		<div class="col-md-4">
+      		    <h3>Quelques liens utiles </h3>
+              <p>
+      		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      		    </p>
+      		</div>
+      		<div class="col-md-4" >
+      		    <h3>Suivre l'information Domhan</h3>
+      		    <p>
+      		        Sur les réseaux sociaux
+      		    </p>
+      		    <ul class="sm">
+      		        <li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
+      		        <li><a href="#" ><img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" class="img-responsive"></a></li>
+      		        <li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"></a></li>
+      		    </ul>
+      		</div>
+          </div>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="col-md-6">
+          <p>© 2018 - All Rights Reserved</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="bottom_ul">
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end Contenu-->
+  </footer>
+  <!--End footer/bas de page-->
+
+
 
     <!-- Angular JS (library) -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
@@ -125,54 +181,8 @@
     <script type="text/javascript" src="./assets/JS/index_gods.js"></script>
     <script type="text/javascript" src="./assets/JS/index_people.js"></script>
     <script type="text/javascript" src="./assets/JS/index_bestiary.js"></script>
+
+
+
   </body>
-
-  <!--Footer/Bas de page-->
-  <footer class="container-fluid footer">
-    <div class="footerHeader" ></div>
-        <div class="container">
-    		<div class="col-md-4" >
-    		    <h3>A propos</h3>
-    		    <p>
-    		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    		    </p>
-    		</div>
-
-    		<div class="col-md-4">
-    		    <h3>Quelques liens utiles </h3>
-            <p>
-    		        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    		    </p>
-    		</div>
-    		<div class="col-md-4" >
-    		    <h3>Suivre l'information Domhan</h3>
-    		    <p>
-    		        Sur les réseaux sociaux
-    		    </p>
-    		    <ul class="sm">
-    		        <li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
-    		        <li><a href="#" ><img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" class="img-responsive"></a></li>
-    		        <li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"></a></li>
-    		    </ul>
-    		</div>
-        </div>
-
-  <div class="copyright">
-    <div class="container">
-      <div class="col-md-6">
-        <p>© 2018 - All Rights Reserved</p>
-      </div>
-      <div class="col-md-6">
-        <ul class="bottom_ul">
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Nous contacter</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!--end Contenu-->
-</footer>
-<!--End footer/bas de page-->
 </html>
