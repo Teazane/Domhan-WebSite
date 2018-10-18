@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/*----Section About----*/
+
+.about {
+  background-image: url("/assets/Pictures/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.about-contain {
+  margin-top: 3%;
+  margin-bottom : 3%;
+  border-style: double;
+  border-width: 5px;
+  border-color: #cfb986;
+}
+
+.about-present-text {
+  margin: 2%;
+}
+.about-present-text p {
+  text-align: center;
+}
+/*---END Section About--*/
+
+/*----Section WWA-------*/
+.wwa-contain {
+  background-image: url("/assets/Pictures/centertree.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 22px;
+  margin-bottom : 62px;
+}
+
+.profils {
+  padding-top: 20px;
+}
+
+.our-team {
+  background-color: #cfb986;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #cfb986;
+}
+
+.our-team .pic{
+    position: relative;
+    overflow: hidden;
+}
+.our-team .pic img{
+    width:100%;
+    height: auto;
+    transition:all 0.20s ease-in-out;
+}
+.our-team:hover img{
+    transform: scale(1.1,1.1);
+}
+.our-team .over-layer{
+    position: absolute;
+    left:0;
+    bottom:-100%;
+    width:100%;
+    height:100%;
+    padding: 20px 10px;
+    background:rgba(27, 37, 48,0.6);
+    transition:all 0.20s ease-in-out;
+}
+.our-team:hover .over-layer{
+    bottom:0;
+}
+.our-team .description{
+    font-size: 14px;
+    font-family: serif;
+    color:#fff;
+    text-align: center;
+}
+
+.team-prof .social_media_team {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.social_media_team {
+    margin-top: 5px;;
+    list-style: none;
+    text-align: center;
+}
+
+.social_media_team > li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.our-team .team-prof{
+    text-align:center;
+    margin-top: 5px;
+}
+.our-team .team-prof a {
+    font-family: 'Inknut Antiqua', serif;
+    color:#3a3428;
+    font-size:18px;
+}
+.our-team .team-prof a:hover{
+    text-decoration:none;
+    color:#ffff;
+}
+.our-team .team-prof small{
+    color:#1b2530;
+    display: block;
+    font-family: 'Alice',serif;
+    font-size: 14px;
+    margin-top:3%;
+}
+
+@media screen and (max-width: 990px){
+    .our-team{
+        margin-bottom: 20px;
+    }
+}
+/*----END Section WWA-------*/
+
+/*----Section Réseaux Sociaux-------*/
+
+hr.style1{
+	border-top: 6px double #cfb986;
+    border-radius: 10px;
+}
+
+.social {
+  background-image: url("/assets/Pictures/back_sec3.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social_network {
+  margin-top : 22px;
+  margin-bottom : 42px;
+}
+
+.social_present {
+  padding-bottom: 2%;
+}
+
+/*----END Section Réseaux Sociaux-------*/
+/*----Section Contact_us---*/
+
+.contact_us {
+  background-image: url("/assets/Pictures/wood_texture.jpg");
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.contact {
+  background-image: url("/assets/Pictures/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top : 21px;
+  margin-bottom : 42px;
+  padding: 10px;
+  border : 10px;
+  border-width: 8px;
+  border-color: #cfb986;
+  border-style: solid;
+}
+
+.contact_title {
+  margin-bottom: 10px;
+}
+
+.formulair_text {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.form-horizontal {
+  margin-right: 10%;
+}
+
+/*----END Contact_us-------*/

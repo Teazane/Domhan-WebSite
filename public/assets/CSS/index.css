@@ -33,7 +33,8 @@ body {
   padding-top: 50px; /*Permet au contenu de rester sous la barre de navigation. A ne pas changer !*/
   font-family: 'Kreon', serif;
   color: #131313; /*Couleur du texte*/
-  background-color: #e7d4aa; /*Couleur du fond de page*/
+  /*background-color: #e7d4aa; /*Couleur du fond de page*/
+  background-image: url("/assets/Pictures/back.jpg");
 }
 
 .container-fluid { /*à changer, ajuste le padding du footer, mais à corriger au ménage*/
@@ -61,8 +62,9 @@ h1 {
 /* END Ligne entre le titre et les articles*/
 
 h2 {
-font-family: serif;
-color: #131313;
+font-family: 'Inknut Antiqua', serif;
+color: #3a3428;
+text-align: center;
 letter-spacing: 0;
 line-height: 21px;
 margin-top: 15px;
@@ -75,6 +77,10 @@ p {
    line-height: 18px;
    line-height: 1.8rem;
    margin: 0.5em;
+}
+
+em {
+  text-decoration: underline;
 }
 
 img {
@@ -206,17 +212,18 @@ ul {
 
 /*----------Footer/Bas de page----------*/
 
+.footerHeader{
+    background-image:url("/assets/Pictures/section_down.png");
+    height: 15px;
+    background-size: auto 100%;
+}
+
 footer {
     background-color: rgba(44, 62, 80, 1.0);
     width: 100%;
     bottom: 0;
     font-weight: lighter;
     color: white;
-}
-.footerHeader{
-    background-image:url("/assets/Pictures/section_down.png");
-    height: 15px;
-    background-size: auto 100%;
 }
 footer h3{
     font-weight:lighter;

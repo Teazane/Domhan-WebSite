@@ -31,13 +31,6 @@
 
 /*-----------Section PRESENTATION--------------*/
 /*Général*/
-.presentation {
-  background-image: url("/assets/Pictures/back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
 .present {
   margin-top : 42px;
   margin-bottom : 42px;
@@ -88,10 +81,11 @@ height:100%;
 }
 
 /*----Bouton "Nous rejoindre"------*/
-.button {
-width: 30%;
+.buttonleaf {
+width: 200px;
 margin-top: 12px;
-display: inline-block;
+margin: auto;
+display: block;
 cursor: pointer;
 }
 /*Changement d'image au passage de la souris sur l'objet*/
@@ -109,40 +103,6 @@ background-position: bottom;
     background-size: auto 100%;
 }
 /*---------END Ligne de séparation---------------------*/
-/*---------SECTION LIENS---------*/
-.liens {
-background-image: url("/assets/Pictures/wood_texture.jpg");
-background-size: contain;
-background-repeat: repeat;
-background-position: top;
-
-}
-/*Couleurs des titres au dessus de chaque liens*/
-.liens h1 {
-  color : #e7d4aa;
-}
-/*Changement d'image au passage de la souris sur l'objet*/
-#chronologie :hover {
-  background-image: url("/assets/Pictures/chrono_stone_hover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-#map :hover{
-  background-image: url("/assets/Pictures/maplien_hover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-#galery :hover{
-  background-image: url("/assets/Pictures/papers_beast_hover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-/*---------END SECTION LIENS---------*/
 
 /*---------SECTION NEWS---------*/
 .news {
@@ -344,8 +304,40 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .button a:nth-child(1) {
    transition-delay: 0.06s;
 }
-*/
-
-
 
 /*--------END SECTION MEMBRES-------*/
+
+/*---------SECTION LIENS---------*/
+.liens {
+background-image: url("/assets/Pictures/wood_texture.jpg");
+background-size: contain;
+background-repeat: repeat;
+background-position: top;
+
+}
+/*Couleurs des titres au dessus de chaque liens*/
+.liens h1 {
+  color : #e7d4aa;
+}
+/*Changement d'image au passage de la souris sur l'objet*/
+#chronologie :hover {
+  background-image: url("/assets/Pictures/chrono_stone_hover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#map :hover{
+  background-image: url("/assets/Pictures/maplien_hover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#galery :hover{
+  background-image: url("/assets/Pictures/papers_beast_hover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/*---------END SECTION LIENS---------*/
