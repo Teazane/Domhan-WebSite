@@ -1,22 +1,21 @@
 @charset "UTF-8";
-
+/*----Général----*/
+#accueil.wwa {
+  background: url("/assets/Pictures/ban-wwa.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*---END Général----*/
 /*----Section About----*/
-
 .about {
   background-image: url("/assets/Pictures/back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
 }
-
 .about-contain {
-  margin-top: 3%;
-  margin-bottom : 3%;
+  margin-top: 2%;
+  margin-bottom : 2%;
   border-style: double;
-  border-width: 5px;
+  border-width: 6px;
   border-color: #cfb986;
 }
-
 .about-present-text {
   margin: 2%;
 }
@@ -27,16 +26,21 @@
 
 /*----Section WWA-------*/
 .wwa-contain {
-  background-image: url("/assets/Pictures/centertree.png");
+  background-image: url("/assets/Pictures/back_sec2.jpg");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 22px;
-  margin-bottom : 62px;
+  border-style: double;
+  border-width: 6px;
+  border-color: #cfb986;
+  margin-top: 2%;
+  margin-bottom : 2%;
+
 }
 
 .profils {
-  padding-top: 20px;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .our-team {
@@ -123,40 +127,16 @@
 }
 /*----END Section WWA-------*/
 
-/*----Section Réseaux Sociaux-------*/
+/*----Section Réseaux sociaux + Contact_us---*/
 
-hr.style1{
-	border-top: 6px double #cfb986;
-    border-radius: 10px;
-}
-
-.social {
-  background-image: url("/assets/Pictures/back_sec3.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.social_network {
-  margin-top : 22px;
-  margin-bottom : 42px;
-}
-
-.social_present {
-  padding-bottom: 2%;
-}
-
-/*----END Section Réseaux Sociaux-------*/
-/*----Section Contact_us---*/
-
-.contact_us {
+.social, .contact_us {
   background-image: url("/assets/Pictures/wood_texture.jpg");
   background-position: center bottom;
   background-size: contain;
   background-repeat: repeat;
 }
 
-.contact {
+.social_network, .contact {
   background-image: url("/assets/Pictures/back.jpg");
   background-size: cover;
   background-position: center;
@@ -174,7 +154,7 @@ hr.style1{
   margin-bottom: 10px;
 }
 
-.formulair_text {
+.social_present, .formulair_text {
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 5px;
@@ -184,4 +164,26 @@ hr.style1{
   margin-right: 10%;
 }
 
-/*----END Contact_us-------*/
+.social_link {
+  text-align: center;
+}
+
+.social_link img {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.social_link button {
+  width: 200px;
+  margin: 15px;
+  opacity: 0.6;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.social_link button:hover {
+	opacity: 1;
+}
+
+/*----END Réseaux Sociaux + Contact_us-------*/

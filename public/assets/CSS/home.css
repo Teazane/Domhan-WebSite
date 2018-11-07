@@ -1,24 +1,24 @@
 @charset "UTF-8";
 
-/*-----------Section BANNIERE--------------*/
-  /*général*/
-
-.banner {
-  height: 600px;
-  background: url('/assets/Pictures/ban.jpg') center center no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+#accueil {
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+  position: relative;
 }
-  /* Interieur de la bannière : texte et possible bouton
-.inner-banner {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  text-align: left;
-}*/
-/*-----------END Section BANNIERE--------------*/
+
+#accueil .logo {
+  display: block;
+  margin: 0 auto 9%;
+  padding-top: 4%;
+  max-width: 73%;
+}
+
+#accueil.main {
+  background: url("/assets/Pictures/ban.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 
 /*-----------Section UP (intercale entre la ban et le reste)--------------*/
 
@@ -32,8 +32,8 @@
 /*-----------Section PRESENTATION--------------*/
 /*Général*/
 .present {
-  margin-top : 42px;
-  margin-bottom : 42px;
+  margin-top : 2%;
+  margin-bottom : 2%;
   border-bottom : 10px;
 }
 /*Partie gauche, texte descriptif et bouton liens*/
@@ -108,9 +108,8 @@ background-position: bottom;
 .news {
   overflow: hidden;
   background-image: url("/assets/Pictures/wood_texture.jpg");
-  background-size: contain;
   background-repeat: repeat;
-  background-position: top;
+  background-position: center center;
   background-attachment: fixed;
 }
 

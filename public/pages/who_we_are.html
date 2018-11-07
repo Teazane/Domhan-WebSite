@@ -1,9 +1,17 @@
 <!--Contenu de la page (hors Navbar et Footer (voir index))-->
+<!-- section BANNIERE -->
+<section id="accueil" class="wwa">
+  <div class="container">
+    <img class="logo" src="assets/Pictures/logomain.png">
+  </div>
+</section>
+<!-- section BANNIERE-->
 
   <!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
   <div class="section-up"></div>
   <!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
 
+    <!-- Section A propos -->
   <section class="container-fluid about" id="about_contain">
     <div class="container about-contain">
 
@@ -26,13 +34,14 @@
       </div>
     </div>
   </section>
+  <!-- END Section A propos -->
 
-  <!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
-  <hr class="style1" id="wwa-contain">
-  <!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
+  <!-- Barre latérale de séparation entre section membres et le contenu liens-->
+  <div class="section-up"></div>
+  <!--END Barre latérale de séparation entre section membres et le contenu liens-->
 
   <!--Section Qui sommes-nous ?-->
-  <section class="container-fluid who_we_are">
+  <section class="container-fluid who_we_are" id="wwa-contain">
     <div class="container wwa-contain">
         <div class="site-heading">
           <h1>QUI SOMMES-NOUS ?</h1>
@@ -141,19 +150,19 @@
   </section>
   <!--END Section Qui-sommes nous ?-->
 
-  <!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
-  <hr class="style1"id="social_network">
-  <!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
+  <!-- Barre latérale de séparation entre section membres et le contenu liens-->
+  <div class="section_down"></div>
+  <!--END Barre latérale de séparation entre section membres et le contenu liens-->
 
   <!--Section Réseaux Sociaux Liens-->
-  <section class="container-fluid social">
+  <section class="container-fluid social" id="social_network">
     <div class="container social_network">
 
         <div class="site-heading">
           <h1>NOUS SOMMES SUR LES RÉSEAUX SOCIAUX !</h1>
           <div class="border"></div>
           <div class="social_present">
-            <p>... bon mais pas n'importe lesquels parce qu'on est quand même très exigeants ! Vous nous trouverez sans problème sur Facebook
+            <p>... bon mais pas n'importe lesquels parce que nous sommes quand même très exigeants ! Vous nous trouverez sans problème sur Facebook
               (mais si Tom, tu vois bien qu'il y a des gens qui l'aiment bien ce réseau !) pour suivre nos dernières publications, et sur Discord
               (un logiciel de chat que vous n'avez même pas besoin de télécharger) si vous voulez bavarder un peu !
              </p>
@@ -162,21 +171,17 @@
 
       <div class="row social_link">
         <!--TODO : Il faudra intégrer un lien dans les images. -->
-        <div class="col-xs-6">
-          <img src="./assets/Pictures/facebook-logo.png" class="img-responsive center-block" alt="FB" width="200" height="200">
-        </div>
-        <div class="col-xs-6">
-          <img src="./assets/Pictures/discord-logo.png" class="img-responsive center-block" alt="Discord" width="200" height="200">
-        </div>
+        <button class="btn btn-link btn-lg" data-toggle="modal" alt="FB">
+          <img src="./assets/Pictures/facebook-logo.png">
+        </button>
+        <button class="btn btn-link btn-lg" data-toggle="modal" alt="Discord">
+          <img src="./assets/Pictures/discord-logo.png">
+        </button>
       </div>
 
     </div>
   </section>
   <!--END Section Réseaux Sociaux Liens-->
-
-  <!-- Barre latérale de séparation entre section membres et le contenu liens-->
-  <div class="section_down"></div>
-  <!--END Barre latérale de séparation entre section membres et le contenu liens-->
 
   <!--Section Nous contacter-->
   <section class="container-fluid contact_us"  id="contact_us">

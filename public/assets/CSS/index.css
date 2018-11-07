@@ -80,7 +80,7 @@ p {
 }
 
 em {
-  text-decoration: underline;
+  text-decoration: inline;
 }
 
 img {
@@ -91,6 +91,20 @@ img {
 ul {
   list-style: none;
 }
+
+/*-------BANNIERE (présente mais différente sur toutes les pages)------*/
+  /*général*
+  .banner {
+    height: 550px;
+  }
+  /* Interieur de la bannière : texte et possible bouton
+.inner-banner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: left;
+}*/
+/*-----------END Section BANNIERE--------------*/
 
 /*----------Barre de navigation----------*/
 
