@@ -9,7 +9,7 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/home.html" //La page correspondante est affichée
     })
     .when("/404_not_found", {
-        templateUrl : "pages/404_not_found.html"
+      templateUrl : "pages/404_not_found.html"
     })
     .when("/qui_sommes_nous", {
       templateUrl : "pages/who_we_are.html"
@@ -18,20 +18,16 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/forum.html"
     })
     .when("/encyclopedie/personnages", {
-      templateUrl : "pages/encyclopedia/index_characters.html",
-      controller: "IndexCharactersController" //le controller associé à la page est chargé
+      templateUrl : "pages/encyclopedia/index_characters.html"
     })
     .when("/encyclopedie/pantheon", {
-      templateUrl : "pages/encyclopedia/index_gods.html",
-      controller: "IndexGodsController"
+      templateUrl : "pages/encyclopedia/index_gods.html"
     })
     .when("/encyclopedie/races_et_peuples", {
-      templateUrl : "pages/encyclopedia/index_people.html",
-      controller: "IndexPeopleController"
+      templateUrl : "pages/encyclopedia/index_people.html"
     })
     .when("/encyclopedie/bestiaire", {
-      templateUrl : "pages/encyclopedia/index_bestiary.html",
-      controller: "IndexBestiaryController"
+      templateUrl : "pages/encyclopedia/index_bestiary.html"
     })
     .when("/encyclopedie/personnages/:character_html", {
         templateUrl : function (url_attr) {
