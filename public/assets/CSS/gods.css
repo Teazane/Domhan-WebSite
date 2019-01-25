@@ -4,6 +4,9 @@
   background: url("/assets/Pictures/ban-gods.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+.contain {
+    margin: 2%;
+}
 /*------END Général-----*/
 
 /*-----Section Introduction----*/
@@ -23,17 +26,16 @@ text-align: justify;
 margin:1%;
 font-size: 15px;
 }
-.gods_def-intro {
+.gods_def-intro, .gods_def-intro p {
   text-align: center;
 }
 .god-button {
-  margin: 2%;
+  margin: 1%;
 }
 /*-----END Section Introduction----*/
 
 /*---------Section D Majeures------*/
 .gods {
-  margin:1%;
   overflow: auto;
 }
 .gods-list {
@@ -103,7 +105,7 @@ background-image: url("/assets/Pictures/back.jpg");
 .gods-minors h1 {
   color : #e7d4aa;
 }
-.gods_minors p {
+.gods-minors p {
   text-align: justify;
   /*text-align-last: center;*/
 }
@@ -167,7 +169,6 @@ background-image: url("/assets/Pictures/back.jpg");
     box-shadow:0 3px 10px rgba(0,0,0,.3);
   }*/
 }
-
 .clearfix:after {
   content:"";
   display:table;
@@ -186,8 +187,27 @@ overflow: auto;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-
-
-
-
 /*----END section D MINEURES---*/
+
+/*-----Section ENTITES------*/
+.ent-contain {
+  margin:2%;
+}
+.entites h2, p {
+    text-align: justify;
+}
+.entites img {
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.entites-descriptions{
+  display: inline-block;
+  padding: 2%;
+  border-style: double;
+  border-width: 10px;
+  border-color: #cfb986;
+}
+/*-----END Section ENTITES------*/
