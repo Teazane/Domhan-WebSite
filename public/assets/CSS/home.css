@@ -16,7 +16,7 @@
 }
 
 #accueil.main {
-  background: url("/assets/Pictures/ban.jpg") no-repeat center center fixed;
+  background: url("/assets/Pictures/banners/ban.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 

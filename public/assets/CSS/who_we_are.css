@@ -1,20 +1,13 @@
 @charset "UTF-8";
 /*----Général----*/
 #accueil.wwa {
-  background: url("/assets/Pictures/ban-wwa.jpg") no-repeat center center fixed;
+  background: url("/assets/Pictures/banners/ban-wwa.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 /*---END Général----*/
 /*----Section About----*/
 .about {
   background-image: url("/assets/Pictures/back.jpg");
-}
-.about-contain {
-  margin-top: 2%;
-  margin-bottom : 2%;
-  border-style: double;
-  border-width: 6px;
-  border-color: #cfb986;
 }
 .about-present-text {
   margin: 2%;
@@ -30,12 +23,6 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-style: double;
-  border-width: 6px;
-  border-color: #cfb986;
-  margin-top: 2%;
-  margin-bottom : 2%;
-
 }
 
 .profils {

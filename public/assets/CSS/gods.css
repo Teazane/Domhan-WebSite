@@ -1,21 +1,14 @@
 @charset "UTF-8";
-/*---------Générale------*/
+/*---------Général------*/
 #accueil.gods {
-  background: url("/assets/Pictures/ban-gods.jpg") no-repeat center center fixed;
+  background: url("/assets/Pictures/banners/ban-gods.jpg") no-repeat center center fixed;
   background-size: cover;
-}
-.contain {
-    margin: 2%;
 }
 /*------END Général-----*/
 
 /*-----Section Introduction----*/
 .gods_definition {
   font-style: italic;
-  margin-bottom: 3%;
-  border: 7px;
-  border-color: #cfb986;
-  border-style: double;
   overflow: hidden;
 }
 .gods_definition h2 {
@@ -39,11 +32,7 @@ font-size: 15px;
   overflow: auto;
 }
 .gods-list {
-  margin: 1%;
   text-align: center;
-  border-style: double;
-  border-width: 7px;
-  border-color: #cfb986;
 }
 .scrollbar {
   overflow-y: scroll;
@@ -174,8 +163,8 @@ background-image: url("/assets/Pictures/back.jpg");
   display:table;
   clear:both;
 }
-.tabgroup img{
-overflow: auto;
+/*.tabgroup img{
+  overflow: auto;
   float: left;
   width: 400px;
   margin-right: 1%;
@@ -186,28 +175,31 @@ overflow: auto;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-}
+}*/
 /*----END section D MINEURES---*/
 
 /*-----Section ENTITES------*/
-.ent-contain {
+/*.ent-contain {
   margin:2%;
+}*/
+.fiche_jaarlan {
+border-bottom: 1px solid #cfb986;
+padding-bottom: 5px;
 }
+
 .entites h2, p {
     text-align: justify;
 }
 .entites img {
   float: left;
-  width: 200px;
+  width: 150px;
   margin-right: 10px;
+  margin-bottom: 5px;
   border-radius: 6px;
   vertical-align: middle;
 }
 .entites-descriptions{
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 2%;
-  border-style: double;
-  border-width: 10px;
-  border-color: #cfb986;
 }
 /*-----END Section ENTITES------*/

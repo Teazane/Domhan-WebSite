@@ -40,6 +40,14 @@ body {
 .container-fluid { /*à changer, ajuste le padding du footer, mais à corriger au ménage*/
   padding: 0;
 }
+/*Container à double bordure*/
+.cont-doublebordure {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: double;
+  border-width: 7px;
+  border-color: #cfb986;
+}
 
 h1 {
   font-family: 'Inknut Antiqua', serif;
