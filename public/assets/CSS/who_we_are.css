@@ -6,9 +6,6 @@
 }
 /*---END Général----*/
 /*----Section About----*/
-.about {
-  background-image: url("/assets/Pictures/back.jpg");
-}
 .about-present-text {
   margin: 2%;
 }
@@ -18,12 +15,6 @@
 /*---END Section About--*/
 
 /*----Section WWA-------*/
-.wwa-contain {
-  background-image: url("/assets/Pictures/back_sec2.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .profils {
   padding-top: 1%;
@@ -115,27 +106,6 @@
 /*----END Section WWA-------*/
 
 /*----Section Réseaux sociaux + Contact_us---*/
-
-.social, .contact_us {
-  background-image: url("/assets/Pictures/wood_texture.jpg");
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat: repeat;
-}
-
-.social_network, .contact {
-  background-image: url("/assets/Pictures/back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top : 21px;
-  margin-bottom : 42px;
-  padding: 10px;
-  border : 10px;
-  border-width: 8px;
-  border-color: #cfb986;
-  border-style: solid;
-}
 
 .contact_title {
   margin-bottom: 10px;

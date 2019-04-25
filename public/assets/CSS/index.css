@@ -19,6 +19,7 @@ bleu marine foncé: 1b2530
 marront foncé (Text h1) : 3a3428
 */
 
+/*-----------------Général----------------*/
 * {
   margin: 0;
   padding: 0;
@@ -28,27 +29,66 @@ marront foncé (Text h1) : 3a3428
   list-style: none;
   box-sizing: border-box;
 }
-
 body {
   padding-top: 50px; /*Permet au contenu de rester sous la barre de navigation. A ne pas changer !*/
   font-family: 'Kreon', serif;
   color: #131313; /*Couleur du texte*/
   /*background-color: #e7d4aa; /*Couleur du fond de page*/
-  background-image: url("/assets/Pictures/back.jpg");
+  background-image: url("/assets/Pictures/background/back.jpg");
 }
+/*----------------END Général-------------------*/
 
+/*-------------Styles des containers------------*/
 .container-fluid { /*à changer, ajuste le padding du footer, mais à corriger au ménage*/
   padding: 0;
 }
 /*Container à double bordure*/
 .cont-doublebordure {
+  background-image: url("/assets/Pictures/background/back.jpg");
   margin-top: 2%;
   margin-bottom: 2%;
   border-style: double;
   border-width: 7px;
   border-color: #cfb986;
 }
+/*Container à double bordure*/
+.cont-solidbordure {
+  background-image: url("/assets/Pictures/background/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top : 21px;
+  margin-bottom : 42px;
+  padding: 10px;
+  border : 10px;
+  border-width: 8px;
+  border-color: #cfb986;
+  border-style: solid;
+}
+/*Container-fluid de fin (page en fondu)*/
+.contfluid-end {
+  background-image: url("/assets/Pictures/background/back_sec3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/*Container en bois*/
+.cont-wood {
+  background-attachment: fixed;
+  background-image: url("/assets/Pictures/background/wood_texture.jpg");
+  background-position: center bottom;
+  background-repeat: repeat;
+}
+/*Container fond tapisserie à motifs*/
+.cont-motifs {
+  background-image: url("/assets/Pictures/background/backmotifs.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*-------------END Styles des containers------------*/
 
+/*-------------Styles de textes------------*/
 h1 {
   font-family: 'Inknut Antiqua', serif;
   font-size: xx-large;
@@ -57,7 +97,6 @@ h1 {
   color: #3a3428;
   font-weight: 200;
 }
-
 /* Ligne entre le titre et les articles/Sous h1*/
 .border {
   background: #cfb986; /*Couleur de la barre de séparation*/
@@ -68,7 +107,6 @@ h1 {
   margin-bottom: 25px; /* Taille de la marge du bas*/
 }
 /* END Ligne entre le titre et les articles*/
-
 h2 {
 font-family: 'Inknut Antiqua', serif;
 color: #3a3428;
@@ -77,7 +115,6 @@ letter-spacing: 0;
 line-height: 21px;
 margin-top: 15px;
 }
-
 p {
   font-family: 'Alice', serif;
    font-size: 14px;
@@ -86,23 +123,20 @@ p {
    line-height: 1.8rem;
    margin: 0.5em;
 }
-
 em {
   text-decoration: inline;
 }
-
 i {
   font-style: italic;
 }
-
 img {
   vertical-align: middle;
   max-width: 100%;
 }
-
 ul {
   list-style: none;
 }
+/*-------------END Styles de textes------------*/
 
 /*-------BANNIERE (présente mais différente sur toutes les pages)------*/
   /*général*
@@ -118,8 +152,7 @@ ul {
 }*/
 /*-----------END Section BANNIERE--------------*/
 
-/*----------Barre de navigation----------*/
-
+/*------------Barre de navigation------------*/
 .navbar .container {
   text-align: center;
     font-family: 'Inknut Antiqua', serif;
@@ -213,15 +246,12 @@ ul {
     background-color: #1b2530;
   }
 }
-
-/*----------logo Domhan----------*/
-
+/*------------------logo Domhan------------------*/
 .navbar-collapse .navbar-brand {
   display: inline-block;
   float: none;
   padding: 0;
   margin: 0;
-
 }
 /*Bloc contenant l'image du logo*/
 .navbar-collapse .navbar-brand .white-circle {
@@ -233,17 +263,15 @@ ul {
 .navbar-collapse .navbar-brand .logo {
   width: 150px;
 }
-/*---------End Logo Domhan---------*/
-/*----------END Barre de navigation----------*/
+/*--------------END logo Domhan------------------*/
+/*------------END Barre de navigation------------*/
 
-/*----------Footer/Bas de page----------*/
-
+/*---------------Footer/Bas de page--------------*/
 .footerHeader{
     background-image:url("/assets/Pictures/section_down.png");
     height: 15px;
     background-size: auto 100%;
 }
-
 footer {
     background-color: rgba(44, 62, 80, 1.0);
     width: 100%;
@@ -339,4 +367,4 @@ footer iframe {
    color:#FFF;
    font-size:12px;
  }
-/*----------END Footer/Bas de page----------*/
+/*-----------END Footer/Bas de page--------------*/

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*---------Général------*/
+#accueil.bestiary {
+  background: url("/assets/Pictures/banners/ban-bestiary.png") no-repeat center center fixed;
+  background-size: cover;
+}
+/*------END Général-----*/
+
+/*.book {
+  background: url("/assets/Pictures/ornement.png") no-repeat center center;
+  background-size: cover;
+}
+
+.bestiary-book {
+  margin:1%;
+  background: url("/assets/Pictures/backbook.jpg") no-repeat center center;
+  background-size: cover;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #1b2530;
+}
+
+.bestiary-descriptions {
+  padding: 2%;
+}
+
+.bestiary-descriptions h2 {
+  margin: 30px;
+}
+
+.bestiary-illustrations {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bestiary-illustrations img {
+ width: 70%;
+}*/
+
+/*---------Section menu accordéon-------*
+.bestiary-menu, .bestiary-others {
+  padding: 0;
+  margin-bottom: 18px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #1b2530;
+  background-color: #1b2530;
+}
+
+.accordion {
+  background-color: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #cfb986;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  margin: 0;
+  background-color: #1b2530;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*liens créatures*/
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  /*background-color: #eee; /* Grey background color */
+  color: #fff; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+/*---------END Section menu accordéon-------*/

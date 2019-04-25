@@ -1,6 +1,99 @@
-<div class=container>
-  <h1>Bestiaire</h1>
-  <p id="bestiary_list">
-    <!-- Remplissage dynamique de la liste -->
-  </p>
-</div>
+<!-- Section BANNIERE -->
+<section id="accueil" class="bestiary">
+  <div class="container">
+    <img class="logo" src="assets/Pictures/logomain.png">
+  </div>
+</section>
+<!-- Section BANNIERE-->
+<!-- Barre latérale de séparation entre la bannière et le contenu de la home page-->
+<div class="section-up"></div>
+<!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
+<!-- Section bestiaire(livre) -->
+<section class="container-fluid cont-motifs">
+  <div class="container">
+    <!-- Titre de la section et séparateur-->
+    <div class="site-heading">
+      <h1>BESTIAIRE</h1>
+      <div class="border"></div>
+    </div>
+    <!-- END Titre de la section et séparateur-->
+
+    <div class="row bestiary-interface">
+    <!----Barre de navigation - Premier niveau/Menu bestiaire------>
+      <div class="col-md-3 bestiary-menu clearfix" data-tabgroup="bestiary-tab-group"">
+        <button class="accordion">Créatures légendaires</button>
+        <div class="panel">
+          <div class="vertical-menu">
+           <a href="#sen">Chat de Sen centenaire</a>
+           <a href="#dragon">Dragons</a>
+           <a href="#licorne">Licorne</a>
+          </div>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <div class="vertical-menu">
+           <a href="">Licorne</a>
+           <a href="">Dragon</a>
+           <a href="">Chat de Sen (100ans)</a>
+          </div>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <div class="vertical-menu">
+           <a href="">Licorne</a>
+           <a href="">Dragon</a>
+           <a href="">Chat de Sen (100ans)</a>
+          </div>
+        </div>
+      </div>
+      <!----END Barre de navigation - Premier niveau/Menu bestiaire------>
+      <section id="bestiary-tab-group" class="col-md-9 btabgroup">
+        <!----Bestaire Licorne---->
+        <div id="licorne">
+
+        </div>
+        <!----Bestiaire dragon---->
+        <div class="dragon">
+
+        </div>
+        <div class="sen">
+
+        </div>
+
+
+
+        <div class="col-md-9 bestiary-book">
+
+          <div class="col-md-6 bestiary-illustrations">
+
+          </div>
+          <div class="col-md-3 bestiary-others">
+            <div class="créatures associées">
+            </div>
+            <div class="zone-map">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+  </div>
+</section>
+
+<!-- script pour java pour le menu accordéon-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>

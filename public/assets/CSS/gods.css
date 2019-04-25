@@ -53,7 +53,7 @@ font-size: 15px;
 }
 /*------Fenêtres modales-----*/
 .modal-content {
-background-image: url("/assets/Pictures/back.jpg");
+background-image: url("/assets/Pictures/background/back.jpg");
 }
 .modal-content p {
   text-align: justify;
@@ -88,9 +88,6 @@ background-image: url("/assets/Pictures/back.jpg");
 /*----END Section D MAJEURES-------*/
 
 /*-----Section D MINEURES------*/
-.gods-minors {
-  background-image: url("/assets/Pictures/wood_texture.jpg");
-}
 .gods-minors h1 {
   color : #e7d4aa;
 }
@@ -100,17 +97,6 @@ background-image: url("/assets/Pictures/back.jpg");
 }
 .gm-contain {
   margin: 2%;
-}
-.gm-grosblock {
-  background-image: url("/assets/Pictures/back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border : 7px;
-  border-width: 8px;
-  border-color: #cfb986;
-  border-style: solid;
-  margin:5px;
 }
 .gm-icontitle {
   margin-top:2%;
@@ -182,6 +168,7 @@ background-image: url("/assets/Pictures/back.jpg");
 /*.ent-contain {
   margin:2%;
 }*/
+
 .fiche_jaarlan {
 border-bottom: 1px solid #cfb986;
 padding-bottom: 5px;
@@ -191,12 +178,13 @@ padding-bottom: 5px;
     text-align: justify;
 }
 .entites img {
-  float: left;
-  width: 150px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  /*float: left;*/
+  display: table-cell;
+vertical-align: middle;
+  text-align: center;
+  display: block;
   border-radius: 6px;
-  vertical-align: middle;
+  overflow: auto; /*garde l'objet à l'intérieur de la div*/
 }
 .entites-descriptions{
   /*display: inline-block;*/
