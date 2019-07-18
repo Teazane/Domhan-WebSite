@@ -67,7 +67,7 @@ body {
 }
 /*Container-fluid de fin (page en fondu)*/
 .contfluid-end {
-  background-image: url("/assets/Pictures/background/back_sec3.jpg");
+  background-image: url("/assets/Pictures/background/backmotifsbas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -116,7 +116,8 @@ line-height: 21px;
 margin-top: 15px;
 }
 p {
-  font-family: 'Alice', serif;
+   text-align: justify;
+   font-family: 'Alice', serif;
    font-size: 14px;
    font-weight: 300;
    line-height: 18px;
@@ -288,7 +289,6 @@ footer ul{
 }
 footer p{
     font-family: 'Alice', serif;
-    text-align : justify;
     font-size : 12px;
 }
 footer iframe {

@@ -15,7 +15,7 @@
   margin: 5%;
 }
 .gods_definition p {
-text-align: justify;
+
 margin:1%;
 font-size: 15px;
 }
@@ -34,7 +34,7 @@ font-size: 15px;
 .gods-list {
   text-align: center;
 }
-.scrollbar {
+.gods_scrollbar {
   overflow-y: scroll;
   height: 650px;
 }
@@ -54,9 +54,6 @@ font-size: 15px;
 /*------Fenêtres modales-----*/
 .modal-content {
 background-image: url("/assets/Pictures/background/back.jpg");
-}
-.modal-content p {
-  text-align: justify;
 }
 .modal-content ul {
   text-align: justify;
@@ -90,10 +87,6 @@ background-image: url("/assets/Pictures/background/back.jpg");
 /*-----Section D MINEURES------*/
 .gods-minors h1 {
   color : #e7d4aa;
-}
-.gods-minors p {
-  text-align: justify;
-  /*text-align-last: center;*/
 }
 .gm-contain {
   margin: 2%;
@@ -165,29 +158,44 @@ background-image: url("/assets/Pictures/background/back.jpg");
 /*----END section D MINEURES---*/
 
 /*-----Section ENTITES------*/
-/*.ent-contain {
-  margin:2%;
-}*/
+.entites-descriptions {
+  padding: 1%;
+}
+.fiche {
+  padding: 1%;
+  height: 50%;
+}
+.fiche h2 {
+  text-align: left;
+}
+.fiche img {
+  width: 250px;
+}
 
+.entites_scrollbar {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+/*
+.entites img {
+  /*float: left;*/
+/* display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+  border-radius: 6px;
+  overflow: auto; /garde l'objet à l'intérieur de la div
+}
+.entites-descriptions{
+ /display: inline-block;
+ padding: 2%;
+}
 .fiche_jaarlan {
 border-bottom: 1px solid #cfb986;
 padding-bottom: 5px;
 }
+*/
 
-.entites h2, p {
-    text-align: justify;
-}
-.entites img {
-  /*float: left;*/
-  display: table-cell;
-vertical-align: middle;
-  text-align: center;
-  display: block;
-  border-radius: 6px;
-  overflow: auto; /*garde l'objet à l'intérieur de la div*/
-}
-.entites-descriptions{
-  /*display: inline-block;*/
-  padding: 2%;
-}
+
 /*-----END Section ENTITES------*/
