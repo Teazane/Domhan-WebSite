@@ -158,18 +158,13 @@ background-image: url("/assets/Pictures/background/back.jpg");
 /*----END section D MINEURES---*/
 
 /*-----Section ENTITES------*/
-.entites-descriptions {
-  padding: 1%;
-}
+
 .fiche {
   padding: 1%;
   height: 50%;
 }
 .fiche h2 {
   text-align: left;
-}
-.fiche img {
-  width: 250px;
 }
 
 .entites_scrollbar {

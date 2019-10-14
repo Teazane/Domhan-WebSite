@@ -1,5 +1,5 @@
 <!-- Section BANNIERE -->
-<section id="accueil" class="bestiary">
+<section id="accueil" class="bestiaire">
   <div class="container">
     <img class="logo" src="assets/Pictures/logomain.png">
   </div>
@@ -10,90 +10,203 @@
 <!-- END Barre latérale de séparation entre la bannière et le contenu de la home page-->
 <!-- Section bestiaire(livre) -->
 <section class="container-fluid cont-motifs">
-  <div class="container">
+  <div class="container bestiary">
     <!-- Titre de la section et séparateur-->
     <div class="site-heading">
       <h1>BESTIAIRE</h1>
       <div class="border"></div>
     </div>
     <!-- END Titre de la section et séparateur-->
-
-    <div class="row bestiary-interface">
-    <!----Barre de navigation - Premier niveau/Menu bestiaire------>
-      <div class="col-md-3 bestiary-menu clearfix" data-tabgroup="bestiary-tab-group"">
-        <button class="accordion">Créatures légendaires</button>
+    <div class="cont-solidbordure row bestiary-interface">
+      <!-- Menu bestaire alphabétique-->
+      <div class="col-xs-2 btn-group bestiary-menu">
+        <button class="bestiary-accordion">A-E</button>
         <div class="panel">
-          <div class="vertical-menu">
-           <a href="#sen">Chat de Sen centenaire</a>
-           <a href="#dragon">Dragons</a>
-           <a href="#licorne">Licorne</a>
-          </div>
+          <ul class="nav" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="balyr-tab" data-toggle="tab" href="#balyr" role="tab" aria-controls="balyr" aria-selected="true">Balyr</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="bzzélith-tab" data-toggle="tab" href="#bzzélith" role="tab" aria-controls="bzzélith" aria-selected="false">Bzzélith</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="chatsen-tab" data-toggle="tab" href="#chatsen" role="tab" aria-controls="chatsen" aria-selected="false">Chat de Sen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cretalv-tab" data-toggle="tab" href="#cretalv" role="tab" aria-controls="cretalv" aria-selected="false">Cretalv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="dleme-tab" data-toggle="tab" href="#dleme" role="tab" aria-controls="dleme" aria-selected="false">Dleme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="dragons-tab" data-toggle="tab" href="#dragons" role="tab" aria-controls="dragons" aria-selected="false">Dragons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="egareur-tab" data-toggle="tab" href="#egareur" role="tab" aria-controls="egareur" aria-selected="false">Egareur (ou Lutin des prés)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="erohuur-tab" data-toggle="tab" href="#erohuur" role="tab" aria-controls="erohuur" aria-selected="false">Erohuur</a>
+            </li>
+          </ul>
         </div>
-        <button class="accordion">Section 2</button>
+        <button class="bestiary-accordion">F-J</button>
         <div class="panel">
-          <div class="vertical-menu">
-           <a href="">Licorne</a>
-           <a href="">Dragon</a>
-           <a href="">Chat de Sen (100ans)</a>
-          </div>
+          <ul class="nav" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="gamalion-tab" data-toggle="tab" href="#gamalion" role="tab" aria-controls="gamalion" aria-selected="true">Gamalion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="garborythe-tab" data-toggle="tab" href="#garborythe" role="tab" aria-controls="garborythe" aria-selected="false">Garborythe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gehodon-tab" data-toggle="tab" href="#gehodon" role="tab" aria-controls="gehodon" aria-selected="false">Géhodon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gogeron-tab" data-toggle="tab" href="#gogeron" role="tab" aria-controls="gogeron" aria-selected="false">Gogeron</a>
+            </li>
+          </ul>
         </div>
-        <button class="accordion">Section 3</button>
+        <button class="bestiary-accordion">K-O</button>
         <div class="panel">
-          <div class="vertical-menu">
-           <a href="">Licorne</a>
-           <a href="">Dragon</a>
-           <a href="">Chat de Sen (100ans)</a>
-          </div>
+          <ul class="nav" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="licorne-tab" data-toggle="tab" href="#licorne" role="tab" aria-controls="licorne" aria-selected="true">Licorne</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="morphy-tab" data-toggle="tab" href="#morphy" role="tab" aria-controls="morphy" aria-selected="false">Morphy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nartz-tab" data-toggle="tab" href="#nartz" role="tab" aria-controls="nartz" aria-selected="false">Nartz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="numari-tab" data-toggle="tab" href="#numari" role="tab" aria-controls="numari" aria-selected="false">Numari</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="oldarkorra-tab" data-toggle="tab" href="#oldarkorra" role="tab" aria-controls="oldarkorra" aria-selected="false">Oldarkorra</a>
+            </li>
+          </ul>
+        </div>
+        <button class="bestiary-accordion">P-T</button>
+        <div class="panel">
+            <ul class="nav" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" id="phantacorne-tab" data-toggle="tab" href="#phantacorne" role="tab" aria-controls="phantacorne" aria-selected="true">Phantacorne</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pilmoo-tab" data-toggle="tab" href="#pilmoo" role="tab" aria-controls="pilmoo" aria-selected="false">Pilmoo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="quetzalchitl-tab" data-toggle="tab" href="#quetzalchitl" role="tab" aria-controls="quetzalchitl" aria-selected="false">Quetzalchitl ou Oiseau-fleur</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="rapcer-tab" data-toggle="tab" href="#rapcer" role="tab" aria-controls="rapcer" aria-selected="false">Rapcer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="riba-tab" data-toggle="tab" href="#riba" role="tab" aria-controls="riba" aria-selected="false">Riba odeća</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="shamu-tab" data-toggle="tab" href="#shamu" role="tab" aria-controls="shamu" aria-selected="false">Shamu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="scarwein-tab" data-toggle="tab" href="#scarwein" role="tab" aria-controls="scarwein" aria-selected="false">Scarwein</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="ecritoire-tab" data-toggle="tab" href="#ecritoire" role="tab" aria-controls="ecritoire" aria-selected="false">Scripteur des forêts ou Écritoire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="snezinka-tab" data-toggle="tab" href="#snezinka" role="tab" aria-controls="snezinka" aria-selected="false">Snežinka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="taringa-tab" data-toggle="tab" href="#taringa" role="tab" aria-controls="taringa" aria-selected="false">Taringa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tigre-tab" data-toggle="tab" href="#tigre" role="tab" aria-controls="tigre" aria-selected="false">Tigre-panda</a>
+              </li>
+            </ul>
+        </div>
+        <button class="bestiary-accordion">U-Z</button>
+        <div class="panel">
+           <ul class="nav" id="myTab" role="tablist">
+             <li class="nav-item">
+               <a class="nav-link" id="ulwlar-tab" data-toggle="tab" href="#ulwlar" role="tab" aria-controls="ulwlar" aria-selected="true">Ulwlar</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="yort-tab" data-toggle="tab" href="#yort" role="tab" aria-controls="yort" aria-selected="false">Yort</a>
+             </li>
+           </ul>
         </div>
       </div>
-      <!----END Barre de navigation - Premier niveau/Menu bestiaire------>
-      <section id="bestiary-tab-group" class="col-md-9 btabgroup">
-        <!----Bestaire Licorne---->
-        <div id="licorne">
-
+      <!-- END Menu bestaire alphabétique-->
+      <!-- Fiches bestaire descriptifs-->
+      <div class="col-xs-10 tab-content">
+        <div class="tab-pane active" id="balyr" role="tabpanel" aria-labelledby="balyr-tab">
+          <p>Nom : Balyr
+          Taille/poids : 2,5 m et 300 kg
+          Habitat/milieu : Côtes maritimes de régions froides
+          Niveau d’intelligence : Animal
+          Dangerosité :  x o o o o
+          Rareté : Commun
+          </p>
         </div>
-        <!----Bestiaire dragon---->
-        <div class="dragon">
 
+        <div class="tab-pane fade" id="bzzélith" role="tabpanel" aria-labelledby="bzzélith-tab">
+          <p>Nom : Bzzélith
+          Taille/poids : 1 à 1,5 cm, la reine généralement plus grosse atteint les 2 cm
+          Dangerosité :  x x o o o
+          Habitat/milieu : Villes, campagnes et forêts
+          Niveau d’intelligence : Animal
+          Rareté : Commun
+          </p>
         </div>
-        <div class="sen">
 
+        <div class="tab-pane fade" id="chatsen" role="tabpanel" aria-labelledby="chasen-tab">
+          <p>Nom : Chat de Sen
+          Taille/poids : 40 cm au garrot, 1 m 20 à 1 m 50 de long (queue entre 45 et 48 cm)
+          Dangerosité :  x x o o o
+          Habitat/milieu : Urbains, zones habitées
+          Niveau d’intelligence : Humain
+          Rareté : Inhabituel
+          </p>
         </div>
 
-
-
-        <div class="col-md-9 bestiary-book">
-
-          <div class="col-md-6 bestiary-illustrations">
-
-          </div>
-          <div class="col-md-3 bestiary-others">
-            <div class="créatures associées">
-            </div>
-            <div class="zone-map">
-            </div>
-          </div>
-
+        <div class="tab-pane fade" id="cretalv" role="tabpanel" aria-labelledby="cretalv-tab">
+          <p>Nom : Cretalv
+          Taille/poids :  7 m de long (queue de 4 m)
+          Dangerosité :  x x x o o
+          Habitat/milieu : Jungles et marécages
+          Niveau d’intelligence : Animal
+          Rareté : Commun
+          </p>
         </div>
-      </section>
 
+      </div>
+      <!-- END Fiches bestaire descriptifs-->
+    </div>
   </div>
 </section>
 
-<!-- script pour java pour le menu accordéon-->
-<script>
-var acc = document.getElementsByClassName("accordion");
+<!--Codes JavaScript pour animation du menu et tabs-->
+<!--JS animation menu accordeon-->
+<script type="text/javascript">
+var acc = document.getElementsByClassName("bestiary-accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
+    if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
+</script>
+<!--JS animation affichage tabs/fiche description-->
+<script type="text/javascript">
+  $('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 </script>
