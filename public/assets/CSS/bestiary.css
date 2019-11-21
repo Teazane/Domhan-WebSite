@@ -5,30 +5,27 @@
   background-size: cover;
 }
 /*------END Général-----*/
-
+/*--------Section : Présentation du bestiaire----------*/
+.bestiary_present p {
+  margin:1%;
+  font-size: 15px;
+}
+/*--------END Section : Présentation du bestiaire----------*/
 /*--------Section : Barre de navigation gauche----------*/
 .bestiary {
   width: 90%;
 }
-
-.bestiary h1 {
-  color : #e7d4aa;
-}
-
 .bestiary-interface {
   padding: 0;
 }
-
 .bestiary-menu {
   background-color: #1b2530;
   padding: 0;
 }
-
 .appli-scroll {
   overflow-y: scroll;
   height: 600px;
 }
-
 .bestiary-accordion {
   background-color: #2c3e50;
   color: #e7d4aa;
@@ -49,7 +46,6 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
 .panel a {
   background-color: #2c3e50; /* Bleu marine background color */
   color: #fff; /* Black text color */
@@ -68,7 +64,7 @@
 }
 
 .fiches-descriptions h2 {
-
+margin-top: 0;
 }
 
 .tab-pane {

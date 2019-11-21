@@ -107,10 +107,9 @@
 
 /*----Section Réseaux sociaux + Contact_us---*/
 
-.contact_title {
-  margin-bottom: 10px;
+.social h1, .contact_us h1 {
+  color : #e7d4aa;
 }
-
 .social_present, .formulair_text {
   text-align: center;
   margin-bottom: 10px;
