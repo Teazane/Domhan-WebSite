@@ -20,15 +20,6 @@
   background-size: cover;
 }
 
-/*-----------Section UP (intercale entre la ban et le reste)--------------*/
-
-.section-up {
-  background-image: url("/assets/Pictures/section_up.png");
-  height: 20px;
-  background-size: auto 100%;
-}
-/*-----------END Section UP--------------*/
-
 /*-----------Section PRESENTATION--------------*/
 /*Général*/
 .present {

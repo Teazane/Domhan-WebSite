@@ -6,25 +6,27 @@
 }
 /*------END Général-----*/
 
-/*--------Barre de navigation----------*/
+/*--------Section : Barre de navigation gauche----------*/
 .bestiary {
-  width: 80%;
+  width: 90%;
+}
+
+.bestiary h1 {
+  color : #e7d4aa;
 }
 
 .bestiary-interface {
   padding: 0;
-  margin:0;
 }
 
 .bestiary-menu {
-  background-color: #2c3e50;
-  border-right-style: solid;
-  border-right-width: 10px;
-  border-right-color: #cfb986;
-  margin:0;
+  background-color: #1b2530;
   padding: 0;
+}
+
+.appli-scroll {
   overflow-y: scroll;
-  height: 650px;
+  height: 600px;
 }
 
 .bestiary-accordion {
@@ -55,4 +57,60 @@
   padding: 12px; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
   text-align: center;
+}
+
+/*--------Section Fiche descriptive de l'animal droite----------*/
+
+/*-------ZONE DESCRIPTION---------*/
+
+.fiches-descriptions {
+  height: auto;
+}
+
+.fiches-descriptions h2 {
+
+}
+
+.tab-pane {
+  margin: 1%;
+  padding: 0;
+  text-align: justify;
+}
+
+.bestiary-fichecentrale {
+  margin: 0;
+  padding: 1%;
+}
+
+.bestiary-fichecentrale img {
+  border-style: double;
+  border-width: 7px;
+  border-color: #cfb986;
+}
+
+.bestiary-scrollbar {
+  overflow-y: scroll;
+  height: 450px;
+}
+
+
+
+
+
+/*----ZONE CARTE ET LIENS ANNEXES--*/
+
+.bestiary-ficheannexe {
+  margin: 0;
+  padding: 0;
+  /*height: 650px;*/
+  border-left-style: solid;
+  border-width: 3px;
+  border-color: #cfb986;
+}
+.bestiary-ficheannexe img {
+  margin: 2%;
+  padding: 0;
+  border-style: double;
+  border-width: 7px;
+  border-color: #cfb986;
 }

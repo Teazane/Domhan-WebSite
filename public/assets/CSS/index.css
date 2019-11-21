@@ -139,6 +139,22 @@ ul {
 }
 /*-------------END Styles de textes------------*/
 
+/*-------Style de separateur de section--------*/
+
+/*-----------Section UP (intercale entre la ban et le reste)--------------*/
+
+.section-up {
+  background-image: url("/assets/Pictures/section_up.png");
+  height: 20px;
+  background-size: auto 100%;
+}
+.section-down {
+  background-image:url("/assets/Pictures/section_down.png");
+  height: 15px;
+  background-size: auto 100%;
+}
+/*-----------END Section UP--------------*/
+
 /*-------BANNIERE (présente mais différente sur toutes les pages)------*/
   /*général*
   .banner {

@@ -119,11 +119,9 @@ background-image: url("/assets/Pictures/background/back.jpg");
     color:#3a3428;
     padding:20px 0;
     border-bottom:2px solid #dac598;
-    /*background:#cfb986;*/
 }
 .tabs a:hover, a.active {
       color:#96785e;
-    /*  background:#965645;*/
     }
 .tabs img:hover, img.active {
   opacity: 0.2;
@@ -132,29 +130,12 @@ background-image: url("/assets/Pictures/background/back.jpg");
 }
 .tabgroup {
   padding: 2%;
-  /*div {
-    padding:30px;
-    box-shadow:0 3px 10px rgba(0,0,0,.3);
-  }*/
 }
 .clearfix:after {
   content:"";
   display:table;
   clear:both;
 }
-/*.tabgroup img{
-  overflow: auto;
-  float: left;
-  width: 400px;
-  margin-right: 1%;
-  border-style: double;
-  border-width: 5px;
-  border-color: #cfb986;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}*/
 /*----END section D MINEURES---*/
 
 /*-----Section ENTITES------*/
@@ -171,26 +152,5 @@ background-image: url("/assets/Pictures/background/back.jpg");
   overflow-y: scroll;
   height: 400px;
 }
-
-/*
-.entites img {
-  /*float: left;*/
-/* display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  display: block;
-  border-radius: 6px;
-  overflow: auto; /garde l'objet à l'intérieur de la div
-}
-.entites-descriptions{
- /display: inline-block;
- padding: 2%;
-}
-.fiche_jaarlan {
-border-bottom: 1px solid #cfb986;
-padding-bottom: 5px;
-}
-*/
-
 
 /*-----END Section ENTITES------*/
