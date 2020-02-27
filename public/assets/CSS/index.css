@@ -36,6 +36,21 @@ body {
   /*background-color: #e7d4aa; /*Couleur du fond de page*/
   background-image: url("/assets/Pictures/background/back.jpg");
 }
+/*--------Scrollbar compatible navigateur (à voir plus tard pour tout centraliser et optimiser)----------*/
+/*---Mozilla Firefox-----*
+.scrollbar-x {
+  overflow-x: scroll;
+  scrollbar-color: auto;
+  scrollbar-width: thin;
+}
+.scrollbar-y {
+  overflow-y: scroll;
+  scrollbar-color: auto;
+  scrollbar-width: thin;
+}
+/*-------Autres---------*/
+
+/*--------END Scrollbar compatible navigateur----------*/
 /*----------------END Général-------------------*/
 
 /*-------------Styles des containers------------*/
