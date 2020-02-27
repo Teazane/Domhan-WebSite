@@ -29,6 +29,9 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/encyclopedie/bestiaire", {
       templateUrl : "pages/encyclopedia/index_bestiary.html"
     })
+    .when("/encyclopedie/magie", {
+      templateUrl : "pages/encyclopedia/magic.html"
+    })
     .when("/contexte/carte_du_monde", {
       templateUrl : "pages/context/map.html"
     })
