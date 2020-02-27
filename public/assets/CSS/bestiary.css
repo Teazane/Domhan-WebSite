@@ -6,10 +6,33 @@
 }
 /*------END Général-----*/
 /*--------Section : Présentation du bestiaire----------*/
+.bestiary_present {
+  padding: 1%;
+}
 .bestiary_present p {
-  margin:1%;
+  margin:2%;
   font-size: 15px;
 }
+table.table-bestiary {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  margin: auto
+}
+table.table-bestiary td, table.table-bestiary th {
+  padding: 3px 3px;
+}
+table.table-bestiary tbody td {
+  font-size: 13px;
+}
+table.table-bestiary thead {
+  background: #cfb986;
+}
+table.table-bestiary thead th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /*--------END Section : Présentation du bestiaire----------*/
 /*--------Section : Barre de navigation gauche----------*/
 .bestiary {
@@ -25,7 +48,10 @@
 .appli-scroll {
   overflow-y: scroll;
   height: 600px;
+  scrollbar-color: auto;
+  scrollbar-width: thin;
 }
+
 .bestiary-accordion {
   background-color: #2c3e50;
   color: #e7d4aa;
@@ -87,11 +113,9 @@ margin-top: 0;
 .bestiary-scrollbar {
   overflow-y: scroll;
   height: 450px;
+  scrollbar-color: auto;
+  scrollbar-width: thin;
 }
-
-
-
-
 
 /*----ZONE CARTE ET LIENS ANNEXES--*/
 
