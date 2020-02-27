@@ -35,6 +35,9 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/encyclopedie/systeme_monetaire", {
       templateUrl : "pages/encyclopedia/monney.html"
     })
+    .when("/encyclopedie/metallurgie", {
+      templateUrl : "pages/encyclopedia/metal.html"
+    })
     .when("/contexte/carte_du_monde", {
       templateUrl : "pages/context/map.html"
     })
