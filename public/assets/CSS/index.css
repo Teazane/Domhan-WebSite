@@ -57,36 +57,6 @@ body {
 .container-fluid { /*à changer, ajuste le padding du footer, mais à corriger au ménage*/
   padding: 0;
 }
-/*Container à double bordure*/
-.cont-doublebordure {
-  background-image: url("/assets/Pictures/background/back.jpg");
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border-style: double;
-  border-width: 7px;
-  border-color: #cfb986;
-}
-/*Container à double bordure*/
-.cont-solidbordure {
-  background-image: url("/assets/Pictures/background/back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top : 21px;
-  margin-bottom : 42px;
-  padding: 10px;
-  border : 10px;
-  border-width: 8px;
-  border-color: #cfb986;
-  border-style: solid;
-}
-/*Container-fluid de fin (page en fondu)*/
-.contfluid-end {
-  background-image: url("/assets/Pictures/background/backmotifsbas.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 /*Container en bois*/
 .cont-wood {
   background-attachment: fixed;
@@ -100,6 +70,36 @@ body {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+/*Container-fluid de fin (page en fondu)*/
+.contfluid-end {
+  background-image: url("/assets/Pictures/background/backmotifsbas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/*Container à double bordure*/
+.cont-doublebordure {
+  background-image: url("/assets/Pictures/background/back.jpg");
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: double;
+  border-width: 7px;
+  border-color: #cfb986;
+}
+/*Container à bordure solide*/
+.cont-solidbordure {
+  background-image: url("/assets/Pictures/background/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top : 21px;
+  margin-bottom : 42px;
+  padding: 10px;
+  border : 10px;
+  border-width: 8px;
+  border-color: #cfb986;
+  border-style: solid;
 }
 /*-------------END Styles des containers------------*/
 
@@ -117,23 +117,26 @@ h1 {
   background: #cfb986; /*Couleur de la barre de séparation*/
   height: 2px; /*épaisseur de la barre de séparation*/
   width: 165px; /*longueur de la barre de séparation*/
-  margin-left: auto;
-  margin-right: auto; /*La barre reste centrée grace à ces deux fonctions*/
+  margin: auto; /*La barre reste centrée grace à cette fonction*/
   margin-bottom: 25px; /* Taille de la marge du bas*/
 }
 /* END Ligne entre le titre et les articles*/
 h2 {
-font-family: 'Inknut Antiqua', serif;
-color: #3a3428;
-text-align: center;
-letter-spacing: 0;
-line-height: 21px;
-margin-top: 15px;
+  font-family: 'Inknut Antiqua', serif;
+  color: #3a3428;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-top: 15px;
+}
+h3 {
+  font-family: 'Alice', serif;
+  font-size: 22px;
 }
 p {
    text-align: justify;
    font-family: 'Alice', serif;
-   font-size: 14px;
+   font-size: 15px;
    font-weight: 300;
    line-height: 18px;
    line-height: 1.8rem;

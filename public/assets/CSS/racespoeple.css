@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*---------Général------*/
+#accueil.characters {
+  background: url("/assets/Pictures/banners/ban-racespeople.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*------END Général-----*/
+
+.racespoeple {
+  width: 90%;
+}
