@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*---------Général------*/
+#accueil.metal {
+  background: url("/assets/Pictures/banners/ban-metal.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*------END Général-----*/
+/*----Section Introduction-----*/
+
+.metal_physicproperty h2, .metal_magicproperty h2 {
+  margin: 3%;
+}
+.metal_physicproperty_text, .metal_magiccproperty_text {
+  margin: 3%;
+}
+/*----END Section Introduction-----*/
+/*-----Section tableau-------*/
+.metal-table h1 {
+  color : #e7d4aa;
+}
+.metal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+  border-style: solid;
+  border-color: #2c3e50;
+  border-width: 2px;
+}
+
+.metal-table th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.metal-table tr:nth-child(even){
+  background-color: #cfb986}
+
+.metal-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+/*-----END Section tableau-------*/
