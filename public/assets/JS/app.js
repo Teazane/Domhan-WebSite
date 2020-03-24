@@ -33,7 +33,7 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl : "pages/encyclopedia/magic.html"
     })
     .when("/encyclopedie/systeme_monetaire", {
-      templateUrl : "pages/encyclopedia/monney.html"
+      templateUrl : "pages/encyclopedia/money.html"
     })
     .when("/encyclopedie/metallurgie", {
       templateUrl : "pages/encyclopedia/metal.html"
